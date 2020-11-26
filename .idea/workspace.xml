@@ -10,17 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2b0f818-174d-4ad1-86da-515ce150ffab" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/tailwind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+    <list default="true" id="b2b0f818-174d-4ad1-86da-515ce150ffab" name="Default Changelist" comment="feat: added tailwind">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +38,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\development\projects\next\geolud-next\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.terraform" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\development\projects\next\geolud-next\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -122,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606385339498</updated>
-      <workItem from="1606385340882" duration="2488000" />
+      <workItem from="1606385340882" duration="6143000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1606386677394</created>
@@ -138,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606386711785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: added tailwind">
+      <created>1606387922716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606387922716</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -160,9 +168,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="feat: added tailwind" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added tailwind" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="93" y="100" width="1093" height="1216" key="DiffContextDialog" timestamp="1606395531299">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="93" y="100" width="1093" height="1216" key="DiffContextDialog/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606395531299" />
     <state x="1025" y="610" key="Github.ShareDialog" timestamp="1606386727275">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
@@ -183,17 +196,21 @@
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="1235" height="400" key="GridCell.Tab.0.right/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606387318853" />
-    <state x="744" y="432" key="Vcs.Push.Dialog.v2" timestamp="1606386713591">
+    <state x="141" y="353" key="SettingsEditor" timestamp="1606396554069">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="744" y="432" key="Vcs.Push.Dialog.v2/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606386713591" />
+    <state x="141" y="353" key="SettingsEditor/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606396554069" />
+    <state x="744" y="432" key="Vcs.Push.Dialog.v2" timestamp="1606387924499">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="744" y="432" key="Vcs.Push.Dialog.v2/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606387924499" />
     <state x="347" y="441" width="585" height="534" key="find.popup" timestamp="1606387318786">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="347" y="441" width="585" height="534" key="find.popup/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606387318786" />
-    <state x="303" y="323" width="672" height="678" key="search.everywhere.popup" timestamp="1606387518474">
+    <state x="303" y="323" width="672" height="678" key="search.everywhere.popup" timestamp="1606387894209">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="303" y="323" width="672" height="678" key="search.everywhere.popup/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606387518474" />
+    <state x="303" y="323" width="672" height="678" key="search.everywhere.popup/-3840.0.1920.1057/0.0.2560.1409@0.0.2560.1409" timestamp="1606387894209" />
   </component>
 </project>

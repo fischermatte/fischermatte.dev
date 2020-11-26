@@ -1,15 +1,23 @@
-import Head from 'next/head';
+import * as React from 'react'
+import Head from 'next/head'
 
-export default function Home(x: string) {
-  return (
-    <div>
-      <Head>
-        <title>Georg Ludewig - Software Engineer</title>
-      </Head>
+type HomeProps = {
+  title: string
+}
 
-      <main>
-        <h1>Moin Georg</h1>
-      </main>
-    </div>
-  );
+class Home extends React.Component<HomeProps> {
+  render(): JSX.Element {
+    let {title} = this.props
+    return (
+      <div>
+        <Head>
+          <title>{title}</title>
+        </Head>
+
+        <main>
+          <h1>Moin Georg</h1>
+        </main>
+      </div>
+    )
+  }
 }

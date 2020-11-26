@@ -1,4 +1,16 @@
 module.exports = {
-  semi: true,
+  $schema: 'http://json.schemastore.org/prettierrc',
+  arrowParens: 'avoid',
+  bracketSpacing: false,
+  htmlWhitespaceSensitivity: 'css',
+  insertPragma: false,
+  printWidth: 120,
+  proseWrap: 'always',
+  quoteProps: 'as-needed',
+  requirePragma: false,
+  semi: false,
   singleQuote: true,
-};
+  tabWidth: 2,
+  trailingComma: 'all',
+  useTabs: false,
+}

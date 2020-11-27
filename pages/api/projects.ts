@@ -1,6 +1,6 @@
-import {NextApiRequest, NextApiResponse} from 'next'
+import type {NextApiRequest, NextApiResponse} from 'next'
 
-export default (_: NextApiRequest, res: NextApiResponse): void => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
   res.statusCode = 200
   res.setHeader('Content-Type', 'application/json')
   res.end(JSON.stringify([{name: 'A'}, {name: 'B'}, {name: 'C'}]))

@@ -1,0 +1,27 @@
+/*.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
+.header__logo {
+  flex: 1;
+}
+
+.header__logo__a {
+  flex: 0 0 auto;
+}
+
+.header__logo::after {
+  width: 100%;
+  right: 10px;
+  content: '';
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-secondary),
+    var(--color-secondary) 2px,
+    transparent 0,
+    transparent 10px
+  );
+  display: block;
+}

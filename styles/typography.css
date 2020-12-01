@@ -1,0 +1,10 @@
+html {
+  font-size: 1rem;
+}
+
+body {
+  @apply text-base text-primary bg-gray-900;
+  /* optimize for prettier fonts rather than faster rendering times */
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}

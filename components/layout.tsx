@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './laoyut.module.css'
 
 type LayoutProps = {
-  children: any
+  children: unknown
 }
 export default class Layout extends React.Component<LayoutProps> {
   render(): JSX.Element {

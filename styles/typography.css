@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply font-serif text-base text-primary bg-accent-back;
+  @apply font-mono text-base text-primary bg-accent-back;
   /* optimize for prettier fonts rather than faster rendering times */
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;

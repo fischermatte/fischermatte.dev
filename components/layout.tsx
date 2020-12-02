@@ -10,7 +10,7 @@ export default class Layout extends React.Component<LayoutProps> {
   render(): JSX.Element {
     let {children} = this.props
     return (
-      <div>
+      <div className="font-mono">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />

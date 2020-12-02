@@ -20,7 +20,7 @@ module.exports = {
       },
     }),
     fontFamily: {
-      serif: ['Fira Code', 'sans-serif'],
+      mono: ['Fira Code', '"Courier New"', 'monospace'],
     },
     extend: {},
   },

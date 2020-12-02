@@ -1,10 +1,31 @@
-html {
-  font-size: 1rem;
+@font-face {
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/FiraCode-Regular.woff') format('woff');
+  font-display: swap;
 }
 
 body {
-  @apply text-base text-primary bg-gray-900;
+  @apply font-serif text-base text-primary bg-accent-back;
   /* optimize for prettier fonts rather than faster rendering times */
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-bold text-accent-front;
+}
+
+h1 {
+  @apply text-2xl border-b-2 border-accent-front;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
 }

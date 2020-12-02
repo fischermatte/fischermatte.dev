@@ -9,7 +9,7 @@ export default class Home extends React.Component<HomeProps> {
   render(): JSX.Element {
     return (
       <Layout>
-        <h1>Moin Georg</h1>
+        <h1>Welcome</h1>
       </Layout>
     )
   }

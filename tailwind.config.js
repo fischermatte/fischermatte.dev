@@ -6,7 +6,21 @@ module.exports = {
     colors: {
       ...colors,
       primary: 'var(--color-primary)',
-      secondary: 'var(--color-secondary)',
+      accent: {
+        front: 'var(--color-accent-front)',
+        back: 'var(--color-accent-back)',
+      },
+    },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      primary: 'var(--color-primary)',
+      accent: {
+        front: 'var(--color-accent-front)',
+        back: 'var(--color-accent-back)',
+      },
+    }),
+    fontFamily: {
+      serif: ['Fira Code', 'sans-serif'],
     },
     extend: {},
   },

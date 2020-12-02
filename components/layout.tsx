@@ -14,36 +14,36 @@ export default class Layout extends React.Component<LayoutProps> {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <title>Georg Ludewig, Software Engineer in Bernlocal</title>
+          <title>Georg Ludewig, Software Engineer in Bern</title>
         </Head>
         <header className="w-full p-6">
-          <div className="flex items-center justify-between">
-            <div className={`${styles.header__logo} flex`}>
+          <div className="flex">
+            <div className="flex bg-accent-front">
               <Link href="/">
-                <a className={`${styles.header__logo__a} bg-secondary text-black`}>
-                  <div className="align-center p-3">Georg Ludewig</div>
+                <a className="">
+                  <div className="align-center p-3 text-accent-back">Georg Ludewig</div>
                 </a>
               </Link>
             </div>
-            {/*<div className="menu-trigger hidden">menu</div>*/}
+            <div className={`flex-grow  ${styles.fill} `}></div>
           </div>
-          <nav>
+          <nav className="mt-4 text-primary flex space-x-4">
             <Link href="/">
-              <a>Home</a>
+              <a className="underline">Home</a>
             </Link>
             <Link href="/resume">
-              <a>Resume</a>
+              <a className="underline">Resume</a>
             </Link>
             <Link href="/projects">
-              <a>Projects</a>
+              <a className="underline">Projects</a>
             </Link>
             <Link href="/contact">
-              <a>Contact</a>
+              <a className="underline">Contact</a>
             </Link>
           </nav>
         </header>
-        <main className="w-full  p-6">{children}</main>
-        <footer className="w-full p-6"> Footer</footer>
+        <main className="w-full p-6">{children}</main>
+        <footer className="w-full p-6"></footer>
       </div>
     )
   }

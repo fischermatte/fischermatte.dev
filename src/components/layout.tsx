@@ -20,6 +20,7 @@ export default class Layout extends React.Component<Props> {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <title>fischermatte engineering</title>
           <style type="text/css">{dom.css()}</style>
+          <link rel="icon" href="/favicon.ico"></link>
         </Head>
         <header className="w-full p-6">
           <div className="flex">

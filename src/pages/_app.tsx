@@ -1,4 +1,4 @@
-import '../styles/main.css'
+import '../../styles/main.css'
 import {AppProps} from 'next/app'
 import * as React from 'react'
 

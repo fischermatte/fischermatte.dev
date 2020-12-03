@@ -54,7 +54,7 @@ export default class Layout extends React.Component<Props> {
               </nav>
             </header>
             <main className="w-full p-6">{children}</main>
-            <footer className="w-full p-6 text-center text-accent-normal">
+            <footer className="w-full p-6 text-center">
               <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
                 <a href="https://twitter.com/fischermatte">
                   <FontAwesomeIcon className="link" icon={faTwitter} />
@@ -69,7 +69,7 @@ export default class Layout extends React.Component<Props> {
                   <FontAwesomeIcon className="link" icon={faGitlab} />
                 </a>
               </div>
-              <div className="p-6 text-sm"> © fischermatte 2020 </div>
+              <div className="text-sm"> © fischermatte 2020 </div>
             </footer>
           </div>
           <div className="flex-1" />

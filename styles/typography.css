@@ -31,9 +31,10 @@ h3 {
 }
 
 .link {
-  @apply text-accent-normal underline cursor-pointer;
+  @apply text-primary cursor-pointer underline;
+  text-underline-position: under;
 }
 
 .link:hover {
-  @apply text-accent-light;
+  @apply text-accent-normal;
 }

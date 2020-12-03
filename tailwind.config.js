@@ -9,16 +9,18 @@ module.exports = {
       ...colors,
       primary: 'var(--color-primary)',
       accent: {
-        front: 'var(--color-accent-front)',
-        back: 'var(--color-accent-back)',
+        light: 'var(--color-accent-light)',
+        normal: 'var(--color-accent-normal)',
+        dark: 'var(--color-accent-dark)',
       },
     },
     backgroundColor: theme => ({
       ...theme('colors'),
       primary: 'var(--color-primary)',
       accent: {
-        front: 'var(--color-accent-front)',
-        back: 'var(--color-accent-back)',
+        light: 'var(--color-accent-light)',
+        normal: 'var(--color-accent-normal)',
+        dark: 'var(--color-accent-dark)',
       },
     }),
     fontFamily: {

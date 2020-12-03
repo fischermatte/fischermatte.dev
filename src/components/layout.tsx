@@ -1,12 +1,16 @@
 import * as React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from './laoyut.module.css'
+import styles from './layout.module.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {dom} from '@fortawesome/fontawesome-svg-core'
 
-type LayoutProps = {
-  children: unknown
+interface Props {
+  children?: unknown
 }
-export default class Layout extends React.Component<LayoutProps> {
+
+export default class Layout extends React.Component<Props> {
   render(): JSX.Element {
     let {children} = this.props
     return (
@@ -15,13 +19,17 @@ export default class Layout extends React.Component<LayoutProps> {
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <title>fischermatte engineering</title>
+          <style type="text/css">{dom.css()}</style>
         </Head>
         <header className="w-full p-6">
           <div className="flex">
-            <div className="flex bg-accent-front">
+            <div className="flex bg-accent-normal">
               <Link href="/">
-                <a className="">
-                  <div className="align-center p-3 text-accent-back">fischermatte</div>
+                <a className="py-3 px-5 text-accent-dark">
+                  <div className="flex flex-col">
+                    <div className="text-lg font-bold mr-3">fischermatte</div>
+                    <div className="text-xs self-end">engineering</div>
+                  </div>
                 </a>
               </Link>
             </div>
@@ -29,21 +37,37 @@ export default class Layout extends React.Component<LayoutProps> {
           </div>
           <nav className="mt-4 text-primary flex space-x-4">
             <Link href="/">
-              <a className="underline">Home</a>
+              <a className="link">Home</a>
             </Link>
             <Link href="/resume">
-              <a className="underline">Resume</a>
+              <a className="link">Resume</a>
             </Link>
             <Link href="/projects">
-              <a className="underline">Projects</a>
+              <a className="link">Projects</a>
             </Link>
             <Link href="/contact">
-              <a className="underline">Contact</a>
+              <a className="link">Contact</a>
             </Link>
           </nav>
         </header>
         <main className="w-full p-6">{children}</main>
-        <footer className="w-full p-6"></footer>
+        <footer className="w-full p-6 text-center text-accent-normal">
+          <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
+            <a href="https://twitter.com/fischermatte">
+              <FontAwesomeIcon className="link" icon={faTwitter} />
+            </a>
+            <a href="https://stackoverflow.com/users/524906/fischermatte">
+              <FontAwesomeIcon className="link" icon={faStackOverflow} />
+            </a>
+            <a href="https://github.com/fischermatte">
+              <FontAwesomeIcon className="link" icon={faGithub} />
+            </a>
+            <a href="https://gitlab.com/fischermatte">
+              <FontAwesomeIcon className="link" icon={faGitlab} />
+            </a>
+          </div>
+          <div className="p-6 text-sm"> © fischermatte 2020 </div>
+        </footer>
       </div>
     )
   }

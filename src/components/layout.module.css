@@ -2,8 +2,8 @@
   content: '';
   background: repeating-linear-gradient(
     90deg,
-    var(--color-accent-front),
-    var(--color-accent-front) 2px,
+    var(--color-accent-normal),
+    var(--color-accent-normal) 2px,
     transparent 0,
     transparent 10px
   );

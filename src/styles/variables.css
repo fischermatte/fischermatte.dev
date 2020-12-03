@@ -1,5 +1,6 @@
 :root {
   --color-primary: #fff;
-  --color-accent-front: rgb(255, 168, 106);
-  --color-accent-back: rgb(34, 33, 41);
+  --color-accent-normal: rgb(255, 168, 106);
+  --color-accent-light: rgb(255, 255, 255);
+  --color-accent-dark: rgb(34, 33, 41);
 }

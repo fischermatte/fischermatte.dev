@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply font-mono text-base text-primary bg-accent-back;
+  @apply font-mono text-base text-primary bg-accent-dark;
   /* optimize for prettier fonts rather than faster rendering times */
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -17,15 +17,23 @@ h1,
 h2,
 h3,
 h4 {
-  @apply font-bold text-accent-front;
+  @apply font-bold text-accent-normal;
 }
 
 h1 {
-  @apply text-2xl border-b-2 border-accent-front;
+  @apply text-2xl border-b-2 border-accent-normal;
 }
 h2 {
   @apply text-xl;
 }
 h3 {
   @apply text-lg;
+}
+
+.link {
+  @apply text-accent-normal underline cursor-pointer;
+}
+
+.link:hover {
+  @apply text-accent-light;
 }

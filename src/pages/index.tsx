@@ -1,15 +1,15 @@
 import Layout from '../components/layout'
 import * as React from 'react'
 
-type HomeProps = {
+interface Props {
   title?: string
 }
 
-export default class Home extends React.Component<HomeProps> {
+export default class Home extends React.Component<Props> {
   render(): JSX.Element {
     return (
       <Layout>
-        <h1>Welcome</h1>
+        <h1>I love coding</h1>
       </Layout>
     )
   }

@@ -1,7 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const {colors} = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
+  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'media', // 'media' or 'class'
   theme: {
     colors: {
       ...colors,

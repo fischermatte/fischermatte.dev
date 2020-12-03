@@ -12,7 +12,7 @@ interface Props {
 
 export default class Layout extends React.Component<Props> {
   render(): JSX.Element {
-    let {children} = this.props
+    const {children} = this.props
     return (
       <div className="font-mono">
         <Head>

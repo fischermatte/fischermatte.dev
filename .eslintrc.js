@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     node: true,
@@ -12,33 +13,44 @@ module.exports = {
       jsx: true,
     },
   },
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
+  ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'], // We don't want to lint generated files nor node_modules, but we want to lint .prettierrc.js (ignored by default by eslint)
+  extends: ['eslint:recommended'],
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      settings: {react: {version: 'detect'}},
+      env: {
+        browser: true,
+        node: true,
+        es6: true,
+      },
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended', // TypeScript rules
+        'plugin:react/recommended', // React rules
+        'plugin:react-hooks/recommended', // React hooks rules
+        'plugin:jsx-a11y/recommended', // Accessibility rules
+        'prettier/@typescript-eslint', // Prettier plugin
+        'plugin:prettier/recommended', // Prettier recommended rules
+      ],
+      rules: {
+        'react/prop-types': 'off', // We will use TypeScript's types for component props instead
+        'react/react-in-jsx-scope': 'off', // No need to import React with Next.js
+        'jsx-a11y/anchor-is-valid': 'off', // This rule is not compatible with how Next.js's <Link />
+        '@typescript-eslint/no-unused-vars': ['error'],
+        '@typescript-eslint/explicit-function-return-type': [
+          // I suggest this setting for requiring return types on functions only where usefull
+          'warn',
+          {
+            allowExpressions: true,
+            allowConciseArrowFunctionExpressionsStartingWithVoid: true,
+          },
+        ],
+        'prettier/prettier': ['error', {}, {usePrettierrc: true}], // Includes .prettierrc.js rules
+      },
+    },
   ],
-  plugins: ['@typescript-eslint', 'react', 'prettier'],
-  rules: {
-    // suppress errors for missing 'import React' in files
-    'react/react-in-jsx-scope': 'off',
-    'react/jsx-filename-extension': [1, {extensions: ['.ts', '.tsx']}],
-    'import/extensions': 'off',
-    'react/prop-types': 'off',
-    'jsx-a11y/anchor-is-valid': 'off',
-    'react/jsx-props-no-spreading': ['error', {custom: 'ignore'}],
-    'prettier/prettier': 'error',
-    'react/no-unescaped-entities': 'off',
-    'import/no-cycle': [0, {ignoreExternal: true}],
-    'prefer-const': 'off',
-    // needed because of https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md#how-to-use & https://stackoverflow.com/questions/63818415/react-was-used-before-it-was-defined
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error', {functions: false, classes: false, variables: true}],
-  },
   settings: {
     react: {
       version: 'detect',

@@ -14,14 +14,14 @@ export default class Layout extends React.Component<LayoutProps> {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <title>Georg Ludewig, Software Engineer in Bern</title>
+          <title>fischermatte engineering</title>
         </Head>
         <header className="w-full p-6">
           <div className="flex">
             <div className="flex bg-accent-front">
               <Link href="/">
                 <a className="">
-                  <div className="align-center p-3 text-accent-back">Georg Ludewig</div>
+                  <div className="align-center p-3 text-accent-back">fischermatte</div>
                 </a>
               </Link>
             </div>

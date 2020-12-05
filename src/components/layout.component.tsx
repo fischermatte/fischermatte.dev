@@ -13,7 +13,7 @@ interface Props {}
 export default class LayoutComponent extends React.Component<PropsWithChildren<Props>> {
   render(): JSX.Element {
     return (
-      <div className="font-mono mx-6 md:mx-30">
+      <div className="font-mono mx-6 md:mx-30 max-w-screen-lg">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -32,7 +32,7 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
                 </a>
               </Link>
             </div>
-            <div className={`flex-grow  ${styles.fill} `}></div>
+            <div className={`flex-grow  ${styles.fill} `}>{}</div>
           </div>
           <nav className="mt-4 text-primary flex space-x-4">
             <Link href="/">

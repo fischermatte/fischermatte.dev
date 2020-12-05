@@ -1,6 +1,6 @@
 export interface Project {
   title: string
-  description: string
+  description?: string
   url?: string
   customer: {
     name: string
@@ -10,5 +10,6 @@ export interface Project {
     from: string
     to?: string
   }
+  tags?: string[]
   links?: {title: string; url: string}[]
 }

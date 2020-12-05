@@ -11,7 +11,7 @@ export const projects: Project[] = [
     interval: {
       from: '2020-12-01',
     },
-    description: 'Technologies: Angular, Firebase, Serverless, Node.js',
+    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js'],
   },
   {
     title: 'Buildigo.ch',
@@ -24,7 +24,7 @@ export const projects: Project[] = [
       from: '2020-06-01',
       to: '2020-12-22',
     },
-    description: 'Technologies: AWS, Serverless, Angular, Node.js',
+    tags: ['AWS', 'Angular', 'Serverless', 'Node.js'],
   },
   {
     title: 'Handwerkerplatform',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       from: '2019-08-01',
       to: '2020-05-01',
     },
-    description: 'Technologies: Angular, Firebase, Serverless, Node.js',
+    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js'],
   },
   {
     title: 'Mobiliar Claim System (MCS)',

@@ -26,7 +26,7 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
               <Link href="/">
                 <a className="py-3 px-5 text-accent-dark">
                   <div className="flex flex-col">
-                    <div className="text-lg font-bold mr-3">fischermatte</div>
+                    <div className="text-lg mr-3">fischermatte</div>
                     <div className="text-xs self-end">engineering</div>
                   </div>
                 </a>

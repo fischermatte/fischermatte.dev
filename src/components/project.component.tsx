@@ -10,7 +10,7 @@ export default class ProjectComponent extends React.Component<Props> {
     const project = this.props.project
     const period = periodText(project)
     return (
-      <div className="mt-8 space-y-3">
+      <div className="mt-20 space-y-3">
         <h2 className="">
           {project.title}
           {/*{project.url && (*/}
@@ -27,7 +27,7 @@ export default class ProjectComponent extends React.Component<Props> {
             {period}
             {' :: '}
             <a
-              className="underline hover:text-accent-light "
+              className="underline hover:text-accent-light"
               href={project.customer.url}
               target="_blank"
               rel="noreferrer"

@@ -8,3 +8,12 @@
     transparent 10px
   );
 }
+
+.navlink {
+  @apply text-primary cursor-pointer underline;
+  text-underline-position: under;
+}
+
+.navlink:hover {
+  @apply text-accent-normal;
+}

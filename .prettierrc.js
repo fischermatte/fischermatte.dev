@@ -14,4 +14,5 @@ module.exports = {
   trailingComma: 'all',
   useTabs: false,
   jsxBracketSameLine: false,
+  endOfLine: 'auto',
 }

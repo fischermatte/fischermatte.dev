@@ -6,7 +6,8 @@
     "lint": "eslint . --ext .ts,.tsx",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3001"
+    "start": "next start -p 3001",
+    "pretty-quick": "npm run pretty-quick"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

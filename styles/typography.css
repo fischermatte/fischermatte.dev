@@ -29,12 +29,14 @@ h2 {
 h3 {
   @apply text-lg;
 }
+h3 {
+  @apply text-base;
+}
 
 .link {
-  @apply text-primary cursor-pointer underline;
-  text-underline-position: under;
+  @apply text-accent-normal cursor-pointer underline;
 }
 
 .link:hover {
-  @apply text-accent-normal;
+  @apply text-accent-light;
 }

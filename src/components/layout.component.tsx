@@ -1,18 +1,17 @@
 import * as React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from './layout.module.css'
+import styles from './layout.component.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {dom} from '@fortawesome/fontawesome-svg-core'
+import {PropsWithChildren} from 'react'
 
-interface Props {
-  children?: unknown
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface Props {}
 
-export default class Layout extends React.Component<Props> {
+export default class LayoutComponent extends React.Component<PropsWithChildren<Props>> {
   render(): JSX.Element {
-    const {children} = this.props
     return (
       <div className="font-mono mx-6 md:mx-30">
         <Head>
@@ -37,20 +36,20 @@ export default class Layout extends React.Component<Props> {
           </div>
           <nav className="mt-4 text-primary flex space-x-4">
             <Link href="/">
-              <a className="link">Home</a>
+              <a className={styles.navlink}>Home</a>
             </Link>
             <Link href="/resume">
-              <a className="link">Resume</a>
+              <a className={styles.navlink}>Resume</a>
             </Link>
             <Link href="/projects">
-              <a className="link">Projects</a>
+              <a className={styles.navlink}>Projects</a>
             </Link>
             <Link href="/contact">
-              <a className="link">Contact</a>
+              <a className={styles.navlink}>Contact</a>
             </Link>
           </nav>
         </header>
-        <main className="py-6">{children}</main>
+        <main className="py-6">{this.props.children}</main>
         <footer className="py-6 text-center">
           <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
             <a href="https://twitter.com/fischermatte">

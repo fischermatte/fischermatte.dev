@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import LayoutComponent from '../components/layout.component'
 import * as React from 'react'
 
 interface Props {}
@@ -7,9 +7,9 @@ interface State {}
 export default class Resume extends React.Component<Props, State> {
   render(): JSX.Element {
     return (
-      <Layout>
+      <LayoutComponent>
         <h1>Resume</h1>
-      </Layout>
+      </LayoutComponent>
     )
   }
 }

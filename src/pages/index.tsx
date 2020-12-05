@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import LayoutComponent from '../components/layout.component'
 import * as React from 'react'
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 export default class Home extends React.Component<Props> {
   render(): JSX.Element {
     return (
-      <Layout>
+      <LayoutComponent>
         <h1>I love coding</h1>
         <p className="pt-4 pb-4">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
@@ -18,7 +18,7 @@ export default class Home extends React.Component<Props> {
           sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
           PageMaker including versions of Lorem Ipsum.
         </p>
-      </Layout>
+      </LayoutComponent>
     )
   }
 }

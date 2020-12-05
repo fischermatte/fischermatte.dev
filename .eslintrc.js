@@ -38,6 +38,7 @@ module.exports = {
         'react/prop-types': 'off', // We will use TypeScript's types for component props instead
         'react/react-in-jsx-scope': 'off', // No need to import React with Next.js
         'jsx-a11y/anchor-is-valid': 'off', // This rule is not compatible with how Next.js's <Link />
+        '@typescript-eslint/no-empty-interface': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
         '@typescript-eslint/explicit-function-return-type': [
           // I suggest this setting for requiring return types on functions only where usefull

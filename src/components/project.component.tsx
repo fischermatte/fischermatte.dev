@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {Project} from '../core/types'
+import {Project} from '../shared/types'
 
 interface Props {
   project: Project

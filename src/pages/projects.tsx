@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {GetStaticProps} from 'next'
-import {Project} from '../core/types'
+import {Project} from '../shared/types'
 import LayoutComponent from '../components/layout.component'
 import ProjectComponent from '../components/project.component'
 

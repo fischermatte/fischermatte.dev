@@ -17,7 +17,7 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <title>fischermatte engineering</title>
+          <title>Fischermatte Engineering</title>
           <style type="text/css">{dom.css()}</style>
         </Head>
         <header className="py-6">
@@ -52,16 +52,16 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
         <main className="py-6">{this.props.children}</main>
         <footer className="py-6 text-center">
           <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
-            <a href="https://twitter.com/fischermatte">
+            <a href="https://twitter.com/fischermatte" title="fischermatte on Twitter">
               <FontAwesomeIcon className="link" icon={faTwitter} />
             </a>
-            <a href="https://stackoverflow.com/users/524906/fischermatte">
+            <a href="https://stackoverflow.com/users/524906/fischermatte" title="fischermatte on Stackoverflow">
               <FontAwesomeIcon className="link" icon={faStackOverflow} />
             </a>
-            <a href="https://github.com/fischermatte">
+            <a href="https://github.com/fischermatte" title="fischermatte on Github">
               <FontAwesomeIcon className="link" icon={faGithub} />
             </a>
-            <a href="https://gitlab.com/fischermatte">
+            <a href="https://gitlab.com/fischermatte" title="fischermatte on Gitlab">
               <FontAwesomeIcon className="link" icon={faGitlab} />
             </a>
           </div>

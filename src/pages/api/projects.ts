@@ -11,7 +11,7 @@ export const projects: Project[] = [
     interval: {
       from: '2020-12-01',
     },
-    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js'],
+    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
   },
   {
     title: 'Buildigo.ch',
@@ -24,7 +24,7 @@ export const projects: Project[] = [
       from: '2020-06-01',
       to: '2020-12-22',
     },
-    tags: ['AWS', 'Angular', 'Serverless', 'Node.js'],
+    tags: ['AWS', 'Angular', 'Serverless', 'Node.js', 'PostgreSQL'],
   },
   {
     title: 'Handwerkerplatform',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       from: '2019-08-01',
       to: '2020-05-01',
     },
-    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js'],
+    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
   },
   {
     title: 'Mobiliar Claim System (MCS)',
@@ -49,7 +49,7 @@ export const projects: Project[] = [
       from: '2018-03-01',
       to: '2018-03-01',
     },
-    description: 'Technologies: Angular, AngularJS, Java/JEE, Kubernetes, Docker',
+    tags: ['Kubernetes', 'Microservices', 'JavaEE', 'Angular', 'Typescript'],
   },
   {
     title: 'PostAuto - Integrated System Architecture (PA-ISA)',
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       from: '2016-01-01',
       to: '2018-02-28',
     },
-    description: 'Technologies: OpenShift, Docker, Vert.x, AngularJS, Spring,Spring Security, HTML 5, JavaScript, Java',
+    tags: ['Microservices', 'Java', 'Spring', 'Angular', 'Docker', 'Vert.x'],
   },
   {
     title: 'Post - Metering',
@@ -73,8 +73,7 @@ export const projects: Project[] = [
       from: '2017-01-01',
       to: '2017-01-01',
     },
-    description:
-      'Technologies: Angular, Bootstrap, Spring, Spring Security, Spring Batch, HTML 5, JavaScript, SASS, Java',
+    tags: ['Angular', 'Java', 'Bootstrap', 'Spring', 'IAM'],
   },
   {
     title: 'Swiss Voting and Election Administration System',
@@ -86,7 +85,7 @@ export const projects: Project[] = [
       from: '2014-01-01',
       to: '2015-01-01',
     },
-    description: 'Technologies: AngularJS, Bootstrap, HTML 5, JavaScript, CSS, Java, Spring, Spring Security, Tomcat',
+    tags: ['AngularJS', 'Java', 'Bootstrap', 'Spring', 'Spring Security'],
   },
   {
     title: 'Swiss Online Voting System (e-Voting)',
@@ -98,7 +97,7 @@ export const projects: Project[] = [
       from: '2014-01-01',
       to: '2014-01-01',
     },
-    description: 'Technologies: AngularJS, Bootstrap, HTML 5, JavaScript, CSS, Java, Spring, Spring Security, Tomcat',
+    tags: ['AngularJS', 'Bootstrap', 'Spring', 'Spring Security'],
   },
   {
     title: 'Mehrwertsteuer Online Einreichen',
@@ -224,6 +223,7 @@ export const projects: Project[] = [
       from: '2008-01-01',
       to: '2009-01-01',
     },
+    tags: ['Java', 'LocationBasedServices', 'GIS', 'PostgreSQL'],
     description:
       'Design and implementation of a platform for mobile location-based advertisement services, which enables the delivery of location-relevant advertisements in real time. The platform is a SOA-based enterprise application using Java EE 5 (JPA, JTA, EJB 3, JSF, JMS) and various Open Source Software (CentOS Linux, PosgreSQL/Postgis, GlassFish, Hibernate, Geoserver, OpenLayers). The project was also part of my Master Thesis (final grade: A).',
   },
@@ -237,6 +237,7 @@ export const projects: Project[] = [
       from: '2008-01-01',
       to: '2008-01-01',
     },
+    tags: ['Java', 'Game'],
     description:
       'A multi-level board game based on Java Swing. Result of a programming course during summer semester of 2008 (Kurs 01580 Programmierpraktikum).',
     links: [
@@ -268,8 +269,9 @@ export const projects: Project[] = [
       from: '2006-01-01',
       to: '2008-01-01',
     },
+    tags: ['Cplusplus'],
     description:
-      'Integration of a cadastral surveying and mapping application into the ALKIS compliant (German Authoritative Real Estate Information System) land management platform of AED-SICAD. Used technologies were C++, COM, .NET and various DBMS (Oracle, MS SQL Server, MS Access).',
+      'Integration of a cadastral surveying and mapping application into the ALKIS compliant (German Authoritative Real Estate Information System) land management platform of AED-SICAD. Used technologies were Cplusplus, COM, .NET and various DBMS (Oracle, MS SQL Server, MS Access).',
   },
   {
     title: 'Application for Spatial Data Acquisition and Management',
@@ -281,8 +283,9 @@ export const projects: Project[] = [
       from: '2005-01-01',
       to: '2008-01-01',
     },
+    tags: ['Cplusplus'],
     description:
-      'Development of an application that allows users to define their own domain specific geographical data model including management and editing functionality. It is closely integrated into ArcGIS via COM technology. Used technologies were C++, MFC and ATL.',
+      'Development of an application that allows users to define their own domain specific geographical data model including management and editing functionality. It is closely integrated into ArcGIS via COM technology. Used technologies were Cplusplus, MFC and ATL.',
   },
   {
     title: 'True Type Font Converter',
@@ -294,8 +297,9 @@ export const projects: Project[] = [
       from: '2006-01-01',
       to: '2006-01-01',
     },
+    tags: ['Cplusplus'],
     description:
-      'Development of a dynamic link library (dll) that provides functionality for true type font conversion into vector geometries. Used technologies were C++, COM and Win32 API. ',
+      'Development of a dynamic link library (dll) that provides functionality for true type font conversion into vector geometries. Used technologies were Cplusplus, COM and Win32 API. ',
   },
   {
     title: 'Application for Geological Map Generation and Data Export',
@@ -307,8 +311,9 @@ export const projects: Project[] = [
       from: '2006-01-01',
       to: '2006-01-01',
     },
+    tags: ['Cplusplus', 'GIS'],
     description:
-      'An application for automatic generation of geological maps based on ESRI s ArcGIS platform. Every step of the software development process was entirely completed by me in direct contact with the TLUG. The application was developed in C++/COM. ',
+      'An application for automatic generation of geological maps based on ESRI s ArcGIS platform. Every step of the software development process was entirely completed by me in direct contact with the TLUG. The application was developed in Cplusplus/COM. ',
   },
   {
     title: 'CAD Export Tool (DWG, DXF, DGN)',
@@ -320,8 +325,9 @@ export const projects: Project[] = [
       from: '2006-01-01',
       to: '2006-01-01',
     },
+    tags: ['Cplusplus', 'GIS'],
     description:
-      'The CAD Export Tool is an extension for ESRI s ArcGIS Desktop product family. The tool allows a user to export a map into the most common CAD file formats (DWG, DXF and DGN). The Export Tool relies on libraries of the Open Design Alliance and is written in C and C++. I was responsible for the whole development process of the product. ',
+      'The CAD Export Tool is an extension for ESRI s ArcGIS Desktop product family. The tool allows a user to export a map into the most common CAD file formats (DWG, DXF and DGN). The Export Tool relies on libraries of the Open Design Alliance and is written in C and Cplusplus. I was responsible for the whole development process of the product. ',
   },
   {
     title: 'Efficient Data Acquisition and Mapping Strategies',
@@ -333,8 +339,9 @@ export const projects: Project[] = [
       from: '2005-01-01',
       to: '2005-01-01',
     },
+    tags: ['Cplusplus', 'GIS'],
     description:
-      'Diploma thesis in cooperation with the ARC-GREENLAB GmbH. Various improvements on GIS applications for spatial data acquisition and mapping. Used technologies were C++/COM.',
+      'Diploma thesis in cooperation with the ARC-GREENLAB GmbH. Various improvements on GIS applications for spatial data acquisition and mapping. Used technologies were Cplusplus/COM.',
   },
   {
     title: 'Online XML/Flash-based map for www.russlandpartner.de',
@@ -346,6 +353,7 @@ export const projects: Project[] = [
       from: '2004-01-01',
       to: '2004-01-01',
     },
+    tags: ['Flash', 'Maps'],
     description:
       'A Flash-based map with information about Russian-German town twinning. Used technologies: XML, Adobe Flash, ActionScript.',
     links: [
@@ -369,6 +377,7 @@ export const projects: Project[] = [
       from: '2001-01-01',
       to: '2001-01-01',
     },
+    tags: ['Flash'],
     description:
       'Flash-based Live Ticker for the Tour de France 2001. Real time stage tracking with maps and profiles.',
     links: [

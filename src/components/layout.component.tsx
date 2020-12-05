@@ -13,7 +13,7 @@ interface Props {}
 export default class LayoutComponent extends React.Component<PropsWithChildren<Props>> {
   render(): JSX.Element {
     return (
-      <div className="font-mono mx-6 md:mx-30 max-w-screen-lg">
+      <div className="font-mono mx-auto max-w-screen-md">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />

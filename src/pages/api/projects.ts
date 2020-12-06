@@ -6,7 +6,7 @@ export const projects: Project[] = [
     url: 'https://www.checkyourcar.ch',
     customer: {
       name: 'die Mobiliar',
-      url: 'https://www.mobiliar.ch/',
+      url: 'https://www.mobiliar.ch',
     },
     period: {
       from: '2020-12-01',
@@ -18,7 +18,7 @@ export const projects: Project[] = [
     url: 'https://www.buildigo.ch/',
     customer: {
       name: 'Buildigo AG',
-      url: 'https://www.mobiliar.ch',
+      url: 'https://www.buildigo.ch',
     },
     period: {
       from: '2020-06-01',

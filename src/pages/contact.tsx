@@ -35,6 +35,8 @@ export default class Contact extends React.Component<Props, State> {
               Send
             </button>
           </div>
+          {/* custom hidden input -> needed by netlify */}
+          <input type="hidden" name="form-name" value="contact-form" />
         </form>
       </LayoutComponent>
     )

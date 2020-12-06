@@ -9,9 +9,14 @@
   );
 }
 
-.navlink {
+.navlink,
+.navlinkActive {
   @apply text-primary cursor-pointer underline;
   text-underline-position: under;
+}
+
+.navlinkActive {
+  @apply text-accent-normal;
 }
 
 .navlink:hover {

@@ -1,4 +1,4 @@
-import LayoutComponent from '../components/layout.component'
+import {LayoutComponent} from '../components/layout.component'
 import * as React from 'react'
 import {faWrench} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'

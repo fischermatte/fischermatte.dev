@@ -1,4 +1,4 @@
-import {Project} from '../../shared/types'
+import {Project} from '../../shared/project.types'
 
 export const projects: Project[] = [
   {
@@ -8,7 +8,7 @@ export const projects: Project[] = [
       name: 'die Mobiliar',
       url: 'https://www.mobiliar.ch/',
     },
-    interval: {
+    period: {
       from: '2020-12-01',
     },
     tags: ['Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
@@ -20,7 +20,7 @@ export const projects: Project[] = [
       name: 'Buildigo AG',
       url: 'https://www.mobiliar.ch',
     },
-    interval: {
+    period: {
       from: '2020-06-01',
       to: '2020-12-22',
     },
@@ -33,7 +33,7 @@ export const projects: Project[] = [
       name: 'die Mobiliar',
       url: 'https://www.mobiliar.ch',
     },
-    interval: {
+    period: {
       from: '2019-08-01',
       to: '2020-05-01',
     },
@@ -45,7 +45,7 @@ export const projects: Project[] = [
       name: 'die Mobiliar',
       url: 'https://www.mobiliar.ch',
     },
-    interval: {
+    period: {
       from: '2018-03-01',
       to: '2018-03-01',
     },
@@ -57,7 +57,7 @@ export const projects: Project[] = [
       name: 'PostAuto Schweiz AG',
       url: 'https://www.postauto.ch',
     },
-    interval: {
+    period: {
       from: '2016-01-01',
       to: '2018-02-28',
     },
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       name: 'Post CH AG',
       url: 'https://www.post.ch',
     },
-    interval: {
+    period: {
       from: '2017-01-01',
       to: '2017-01-01',
     },
@@ -81,7 +81,7 @@ export const projects: Project[] = [
       name: 'Unisys Switzerland',
       url: 'http://www.unisys.ch/index.htm',
     },
-    interval: {
+    period: {
       from: '2014-01-01',
       to: '2015-01-01',
     },
@@ -93,7 +93,7 @@ export const projects: Project[] = [
       name: 'Unisys Switzerland',
       url: 'http://www.unisys.ch/index.htm',
     },
-    interval: {
+    period: {
       from: '2014-01-01',
       to: '2014-01-01',
     },
@@ -105,7 +105,7 @@ export const projects: Project[] = [
       name: 'Swiss Federal Tax Administration FTA',
       url: 'http://www.estv.admin.ch/index.html?lang=en',
     },
-    interval: {
+    period: {
       from: '2014-01-01',
       to: '2014-01-01',
     },
@@ -118,7 +118,7 @@ export const projects: Project[] = [
       name: 'Swiss Federal Office of Public Health FOPH',
       url: 'http://www.bag.admin.ch/index.html?lang=en',
     },
-    interval: {
+    period: {
       from: '2013-01-01',
       to: '2014-01-01',
     },
@@ -131,7 +131,7 @@ export const projects: Project[] = [
       name: 'Swiss Federal Office of Migration FOM',
       url: 'https://www.bfm.admin.ch/bfm/en/home.html',
     },
-    interval: {
+    period: {
       from: '2012-01-01',
       to: '2013-01-01',
     },
@@ -144,7 +144,7 @@ export const projects: Project[] = [
       name: 'Swiss Federal Office of Migration FOM',
       url: 'https://www.bfm.admin.ch/bfm/en/home.html',
     },
-    interval: {
+    period: {
       from: '2013-01-01',
       to: '2013-01-01',
     },
@@ -156,7 +156,7 @@ export const projects: Project[] = [
       name: 'Swiss National Library',
       url: 'https://www.nb.admin.ch/?lang=en',
     },
-    interval: {
+    period: {
       from: '2011-01-01',
       to: '2012-01-01',
     },
@@ -168,7 +168,7 @@ export const projects: Project[] = [
       name: 'Federal Office for the Environment FOEN',
       url: 'http://www.bafu.admin.ch/?lang=en',
     },
-    interval: {
+    period: {
       from: '2011-01-01',
       to: '2017-01-01',
     },
@@ -181,7 +181,7 @@ export const projects: Project[] = [
       name: 'Stiftung HAM',
       url: 'http://www.stiftung-ham.ch/',
     },
-    interval: {
+    period: {
       from: '2011-01-01',
       to: '2011-01-01',
     },
@@ -193,7 +193,7 @@ export const projects: Project[] = [
       name: 'Unisys Switzerland',
       url: 'http://www.unisys.ch/index.htm',
     },
-    interval: {
+    period: {
       from: '2009-01-01',
       to: '2010-01-01',
     },
@@ -206,7 +206,7 @@ export const projects: Project[] = [
       name: 'Nokia Gate 5 GmbH (now HERE)',
       url: 'https://here.com',
     },
-    interval: {
+    period: {
       from: '2008-01-01',
       to: '2009-01-01',
     },
@@ -219,7 +219,7 @@ export const projects: Project[] = [
       name: 'Tieto International',
       url: 'http://www.tieto.com/',
     },
-    interval: {
+    period: {
       from: '2008-01-01',
       to: '2009-01-01',
     },
@@ -233,7 +233,7 @@ export const projects: Project[] = [
       name: 'Hagen University',
       url: 'http://www.fernuni-hagen.de/english',
     },
-    interval: {
+    period: {
       from: '2008-01-01',
       to: '2008-01-01',
     },
@@ -265,7 +265,7 @@ export const projects: Project[] = [
       name: 'ARC-GREENLAB GmbH ',
       url: 'http://www.arc-greenlab.de/',
     },
-    interval: {
+    period: {
       from: '2006-01-01',
       to: '2008-01-01',
     },
@@ -279,7 +279,7 @@ export const projects: Project[] = [
       name: 'ARC-GREENLAB GmbH ',
       url: 'http://www.arc-greenlab.de/',
     },
-    interval: {
+    period: {
       from: '2005-01-01',
       to: '2008-01-01',
     },
@@ -293,7 +293,7 @@ export const projects: Project[] = [
       name: 'DHI-WASY GmbH ',
       url: 'http://www.wasy.de/',
     },
-    interval: {
+    period: {
       from: '2006-01-01',
       to: '2006-01-01',
     },
@@ -307,7 +307,7 @@ export const projects: Project[] = [
       name: 'Thuringia State Authority for Environment and Geology (TLUG)',
       url: 'http://www.tlug-jena.de/',
     },
-    interval: {
+    period: {
       from: '2006-01-01',
       to: '2006-01-01',
     },
@@ -321,7 +321,7 @@ export const projects: Project[] = [
       name: 'ARC-GREENLAB GmbH ',
       url: 'http://www.arc-greenlab.de/',
     },
-    interval: {
+    period: {
       from: '2006-01-01',
       to: '2006-01-01',
     },
@@ -335,7 +335,7 @@ export const projects: Project[] = [
       name: 'ARC-GREENLAB GmbH ',
       url: 'http://www.arc-greenlab.de/',
     },
-    interval: {
+    period: {
       from: '2005-01-01',
       to: '2005-01-01',
     },
@@ -349,7 +349,7 @@ export const projects: Project[] = [
       name: 'Deutsch-Russische Forum e.V.',
       url: 'http://www.deutsch-russisches-forum.de/',
     },
-    interval: {
+    period: {
       from: '2004-01-01',
       to: '2004-01-01',
     },
@@ -373,7 +373,7 @@ export const projects: Project[] = [
       name: 'SPIEGEL ONLINE',
       url: 'http://www.spiegel.de/',
     },
-    interval: {
+    period: {
       from: '2001-01-01',
       to: '2001-01-01',
     },

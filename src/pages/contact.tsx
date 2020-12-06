@@ -1,4 +1,4 @@
-import LayoutComponent from '../components/layout.component'
+import {LayoutComponent} from '../components/layout.component'
 import * as React from 'react'
 
 interface Props {}

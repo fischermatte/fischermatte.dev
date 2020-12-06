@@ -1,3 +1,5 @@
+import {Period} from './common.types'
+
 export interface Project {
   title: string
   description?: string
@@ -6,10 +8,7 @@ export interface Project {
     name: string
     url: string
   }
-  interval: {
-    from: string
-    to?: string
-  }
+  period: Period
   tags?: string[]
   links?: {title: string; url: string}[]
 }

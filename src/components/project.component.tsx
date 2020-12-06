@@ -1,5 +1,6 @@
 import * as React from 'react'
-import {Project} from '../shared/types'
+import {Project} from '../shared/project.types'
+import {periodText} from '../shared/period.utils'
 
 interface Props {
   project: Project
@@ -8,10 +9,10 @@ interface Props {
 export default class ProjectComponent extends React.Component<Props> {
   render(): JSX.Element {
     const project = this.props.project
-    const period = periodText(project)
+    const period = periodText(project.period)
     return (
-      <div className="space-y-3">
-        <h2 className="">
+      <div>
+        <h2>
           {project.title}
           {/*{project.url && (*/}
           {/*  <span>*/}
@@ -23,9 +24,9 @@ export default class ProjectComponent extends React.Component<Props> {
           {/*)}*/}
         </h2>
         {project.customer && (
-          <div className="text-base text-accent-normal opacity-70">
+          <div className="text-base text-accent-normal opacity-70 mb-3">
             {period}
-            {' :: '}
+            {' | '}
             <a
               className="underline hover:text-accent-light"
               href={project.customer.url}
@@ -60,16 +61,4 @@ export default class ProjectComponent extends React.Component<Props> {
       </div>
     )
   }
-}
-
-function periodText(project: Project): string {
-  const from = new Date(project.interval.from).getFullYear()
-  const to = project.interval.to ? new Date(project.interval.to).getFullYear() : undefined
-  let period
-  if (from !== to && !!to) {
-    period = `${from} - ${to}`
-  } else {
-    period = from
-  }
-  return period
 }

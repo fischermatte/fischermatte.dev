@@ -38,7 +38,7 @@ export default class ProjectComponent extends React.Component<Props> {
           </div>
         )}
         {project.tags && (
-          <div className="text-sm opacity-50">
+          <div className="text-sm opacity-60">
             {project.tags?.map(tag => (
               <span key={tag}>
                 {'#'}

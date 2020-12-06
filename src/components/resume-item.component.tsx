@@ -11,11 +11,13 @@ export default class ResumeItemComponent extends React.Component<Props> {
     return (
       <div>
         <div className="mb-1">{item.title}</div>
-        {item.subtitles.map(subtitle => (
-          <div key={subtitle} className="opacity-70">
-            {subtitle}
-          </div>
-        ))}
+        <div className="space-y-1">
+          {item.subtitles.map(subtitle => (
+            <div key={subtitle} className="opacity-60">
+              {subtitle}
+            </div>
+          ))}
+        </div>
       </div>
     )
   }

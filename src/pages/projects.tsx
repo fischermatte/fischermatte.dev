@@ -18,9 +18,11 @@ export default class Projects extends React.Component<Props> {
     return (
       <LayoutComponent>
         <h1>Projects</h1>
-        {this.props.projects.map(project => (
-          <ProjectComponent key={project.title} project={project} />
-        ))}
+        <div className="space-y-20">
+          {this.props.projects.map(project => (
+            <ProjectComponent key={project.title} project={project} />
+          ))}
+        </div>
       </LayoutComponent>
     )
   }

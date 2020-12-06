@@ -29,7 +29,7 @@ h4 {
 }
 
 h1 {
-  @apply text-2xl;
+  @apply text-2xl mb-8;
 }
 h2,
 h2:after {

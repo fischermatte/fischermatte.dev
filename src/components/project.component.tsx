@@ -10,7 +10,7 @@ export default class ProjectComponent extends React.Component<Props> {
     const project = this.props.project
     const period = periodText(project)
     return (
-      <div className="mt-20 space-y-3">
+      <div className="space-y-3">
         <h2 className="">
           {project.title}
           {/*{project.url && (*/}

@@ -11,9 +11,9 @@ export default class Home extends React.Component<Props> {
   render(): JSX.Element {
     return (
       <LayoutComponent>
-        <div className="text-7xl w-full text-center text-accent-normal py-12 bg-accent-normal text-accent-dark">
-          <div className="text-2xl mb-10 font-bold">Under Construction</div>
-          <FontAwesomeIcon icon={faWrench} />
+        <div className="w-full text-center text-accent-normal py-12 bg-accent-normal text-accent-dark">
+          <div className="mb-10 ">Under Construction</div>
+          <FontAwesomeIcon className="text-4xl" icon={faWrench} />
         </div>
       </LayoutComponent>
     )

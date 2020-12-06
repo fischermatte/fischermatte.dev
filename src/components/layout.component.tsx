@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {dom} from '@fortawesome/fontawesome-svg-core'
 import {PropsWithChildren} from 'react'
+import packageJson from '../../package.json'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
@@ -65,7 +66,12 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
               <FontAwesomeIcon className="link" icon={faGitlab} />
             </a>
           </div>
-          <div className="text-sm"> © fischermatte 2020 </div>
+          <div className="text-sm">© fischermatte 2020</div>
+          <div className="text-xs mt-2 opacity-30">
+            <a href="https://github.com/fischermatte/fischermatte-next" target="_blank" rel="noreferrer">
+              Version {packageJson.version}
+            </a>
+          </div>
         </footer>
       </div>
     )

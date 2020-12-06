@@ -12,17 +12,22 @@ export default class Contact extends React.Component<Props, State> {
         <form name="contact" method="POST" data-netlify="true">
           <div className="mt-4">
             <label className="block">
-              <input className="form-input mt-1 block w-full bg-gray-700" placeholder="Name" />
+              <input name="name" className="form-input mt-1 block w-full bg-gray-700" placeholder="Name" />
             </label>
           </div>
           <div className="mt-4">
             <label className="block">
-              <input type="email" className="form-input mt-1 block w-full bg-gray-700" placeholder="Email" />
+              <input
+                type="email"
+                name="email"
+                className="form-input mt-1 block w-full bg-gray-700"
+                placeholder="Email"
+              />
             </label>
           </div>
           <div className="mt-4">
             <label className="block">
-              <textarea className="form-textarea mt-1 block w-full bg-gray-700" placeholder="Text" />
+              <textarea name="message" className="form-textarea mt-1 block w-full bg-gray-700" placeholder="Message" />
             </label>
           </div>
           <div className="mt-4">

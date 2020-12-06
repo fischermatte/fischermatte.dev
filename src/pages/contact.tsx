@@ -30,8 +30,8 @@ export default class Contact extends React.Component<Props, State> {
               <textarea name="message" className="form-textarea mt-1 block w-full bg-gray-700" placeholder="Message" />
             </label>
           </div>
-          <div className="mt-4">
-            <button className="bg-accent-normal px-3 py-2 text-accent-dark font-bold w-32 rounded" type="submit">
+          <div className="mt-4 text-center">
+            <button className="bg-accent-normal py-2 text-accent-dark w-32 rounded hover:opacity-80" type="submit">
               Send
             </button>
           </div>

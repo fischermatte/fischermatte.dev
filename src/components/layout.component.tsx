@@ -24,6 +24,10 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
           content="fischermatte, engineering, cloud, serverless, domain driven design, software engineer, bern, switzerland, schweiz"
         />
         <meta name="description" content="fischermatte engineering - software engineer in bern, switzerland" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="/favicon-512x512.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/favicon-apple-touch.png" sizes="180x180" />
         <title>Fischermatte Engineering</title>
         <style type="text/css">{dom.css()}</style>
       </Head>

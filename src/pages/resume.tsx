@@ -1,21 +1,19 @@
 import {LayoutComponent} from '../components/layout.component'
 import * as React from 'react'
-import {Resume} from '../shared/resume.types'
-import {GetStaticProps} from 'next'
 import {periodText} from '../shared/period.utils'
 import ResumeItemsComponent from '../components/resume-items.component'
 import {resume} from '../data/resume'
 
-interface Props {
-  resume: Resume
-}
+interface Props {}
+
 interface State {}
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  return {props: {resume}}
-}
-
 export default class ResumeComponent extends React.Component<Props, State> {
+  constructor(props: Readonly<Props> | Props) {
+    super(props)
+    this.state = {resume}
+  }
+
   render(): JSX.Element {
     return (
       <LayoutComponent>
@@ -24,7 +22,7 @@ export default class ResumeComponent extends React.Component<Props, State> {
           <section>
             <h2>Work Experience</h2>
             <ResumeItemsComponent
-              items={this.props.resume.jobs.map(j => {
+              items={resume.jobs.map(j => {
                 const subtitle = `${periodText(j.period)} | ${j.location}`
                 return {
                   title: j.employer,
@@ -36,7 +34,7 @@ export default class ResumeComponent extends React.Component<Props, State> {
           <section>
             <h2>Certificates</h2>
             <ResumeItemsComponent
-              items={this.props.resume.certificates.map(c => {
+              items={resume.certificates.map(c => {
                 const subtitle = new Date(c.time).getFullYear().toString()
                 return {
                   title: c.name,
@@ -48,7 +46,7 @@ export default class ResumeComponent extends React.Component<Props, State> {
           <section>
             <h2>Education</h2>
             <ResumeItemsComponent
-              items={this.props.resume.educations.map(e => {
+              items={resume.educations.map(e => {
                 return {
                   title: e.title,
                   subtitles: e.locations.map(l => {

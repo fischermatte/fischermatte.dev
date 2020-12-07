@@ -4,6 +4,7 @@ import {Resume} from '../shared/resume.types'
 import {GetStaticProps} from 'next'
 import {periodText} from '../shared/period.utils'
 import ResumeItemsComponent from '../components/resume-items.component'
+import {resume} from '../data/resume'
 
 interface Props {
   resume: Resume
@@ -11,8 +12,7 @@ interface Props {
 interface State {}
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const m = await import('./api/resume')
-  return {props: {resume: m.resume}}
+  return {props: {resume}}
 }
 
 export default class ResumeComponent extends React.Component<Props, State> {

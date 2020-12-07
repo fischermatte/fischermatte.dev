@@ -3,14 +3,14 @@ import {GetStaticProps} from 'next'
 import ProjectComponent from '../components/project.component'
 import {Project} from '../shared/project.types'
 import {LayoutComponent} from '../components/layout.component'
+import {projects} from '../data/projects'
 
 interface Props {
   projects: Project[]
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const m = await import('./api/projects')
-  return {props: {projects: m.projects}}
+  return {props: {projects}}
 }
 
 export default class Projects extends React.Component<Props> {

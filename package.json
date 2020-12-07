@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint . --ext .ts,.tsx,.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 3001",
-    "format": "eslint — fix .",
+    "format": "prettier --write .",
     "sitemap": "ts-node --project _scripts/tsconfig.json _scripts/generate-sitemap.ts"
   },
   "dependencies": {

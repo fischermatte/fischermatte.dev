@@ -34,3 +34,6 @@ yarn-error.log*
 .vercel
 /.idea/
 /.run/
+
+# generated
+public/sitemap.xml

@@ -19,6 +19,11 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="keywords"
+          content="fischermatte, engineering, cloud, serverless, domain driven design, software engineer, bern, switzerland, schweiz"
+        />
+        <meta name="description" content="fischermatte engineering - software engineer in bern, switzerland" />
         <title>Fischermatte Engineering</title>
         <style type="text/css">{dom.css()}</style>
       </Head>

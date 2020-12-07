@@ -3,11 +3,11 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2020: true,
+    es2017: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,

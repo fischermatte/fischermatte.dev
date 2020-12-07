@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/60746c83-4fed-435e-8529-ccf46bef6bae/deploy-status)](https://app.netlify.com/sites/fischermatte/deploys)
 
-# fischermatte.net
+# fischermatte.dev
 
 Personal website based on the following technologies
 

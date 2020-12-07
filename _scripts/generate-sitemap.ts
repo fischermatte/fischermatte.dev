@@ -33,7 +33,7 @@ function toUrlElement(page: string): string {
 
   return `
   <url>
-      <loc>${`https://fischermatte.net${route}`}</loc>
+      <loc>${`https://fischermatte.dev${route}`}</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
       <changefreq>daily</changefreq>
       <priority>${priorities[path] ?? '0.8'}</priority>

@@ -5,10 +5,11 @@
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx,.js",
     "dev": "next dev",
+    "prebuild": "npm run generate:sitemap",
     "build": "next build",
     "start": "next start -p 3001",
     "format": "prettier --write .",
-    "sitemap": "ts-node --project _scripts/tsconfig.json _scripts/generate-sitemap.ts"
+    "generate:sitemap": "ts-node --project _scripts/tsconfig.json _scripts/generate-sitemap.ts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

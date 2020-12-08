@@ -8,7 +8,7 @@ export default class Contact extends React.Component<Props, State> {
   render(): JSX.Element {
     return (
       <LayoutComponent>
-        <h1>Contact</h1>
+        <h1>{"Let's get in touch!"}</h1>
         <form name="contact" method="POST" data-netlify="true">
           <div className="mt-4">
             <label className="block">

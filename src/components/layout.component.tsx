@@ -35,12 +35,7 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
         <div className="flex">
           <div className="flex bg-accent-normal">
             <Link href="/">
-              <a className="py-3 px-5 text-accent-dark">
-                <div className="flex flex-col">
-                  <div className="text-lg mr-3">fischermatte</div>
-                  <div className="text-xs self-end">software engineer</div>
-                </div>
-              </a>
+              <a className="py-3 px-5 text-accent-dark text-center">fischermatte</a>
             </Link>
           </div>
           <div className={`flex-grow  ${styles.fill} `}>{}</div>

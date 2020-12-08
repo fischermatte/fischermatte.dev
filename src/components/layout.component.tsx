@@ -78,7 +78,12 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
         </div>
         <div className="text-sm">© fischermatte 2020</div>
         <div className="text-xs mt-2 opacity-30">
-          <a href="https://github.com/fischermatte/fischermatte-next" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/fischermatte/fischermatte-next"
+            target="_blank"
+            rel="noreferrer"
+            title="View the fancy code of this site on Github"
+          >
             Version {packageJson.version}
           </a>
         </div>

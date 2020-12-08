@@ -9,8 +9,8 @@ export default class Contact extends React.Component<Props, State> {
     return (
       <LayoutComponent>
         <h1>{"Let's get in touch!"}</h1>
-        <p>{"Any questions or need help? Don't hesitate to contact me."}</p>
-        <form name="contact" method="POST" data-netlify="true" className="mt-8">
+        <p>{"Any questions or need help? Don't hesitate to contact me:"}</p>
+        <form name="contact" method="POST" data-netlify="true" className="mt-4">
           <div className="mt-4">
             <label className="block">
               <input name="name" className="form-input mt-1 block w-full bg-gray-700" placeholder="Name" />

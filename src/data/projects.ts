@@ -11,7 +11,19 @@ export const projects: Project[] = [
     period: {
       from: '2020-12-01',
     },
-    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
+    tags: ['GoogleCloud', 'Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
+  },
+  {
+    title: 'fischermatte.dev',
+    url: 'https://github.com/fischermatte/fischermatte-next',
+    customer: {
+      name: 'Myself',
+      url: 'https://fischermatte.dev',
+    },
+    period: {
+      from: '2020-12-01',
+    },
+    tags: ['Next.js', 'React', 'Typescript', 'Netlify'],
   },
   {
     title: 'Buildigo.ch',
@@ -37,7 +49,7 @@ export const projects: Project[] = [
       from: '2019-08-01',
       to: '2020-05-01',
     },
-    tags: ['Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
+    tags: ['GoogleCloud', 'Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
   },
   {
     title: 'Mobiliar Claim System (MCS)',

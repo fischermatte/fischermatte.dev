@@ -24,10 +24,10 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
           content="fischermatte, engineering, cloud, serverless, domain driven design, software engineer, software development, bern, switzerland, schweiz"
         />
         <meta name="description" content="Fischermatte - Software Engineer in Bern, Switzerland" />
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
-        <link rel="icon" type="image/png" href="/favicon-512x512.png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/favicon-apple-touch.png" sizes="180x180" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" crossOrigin="anonymous" />
+        <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192" crossOrigin="anonymous" />
+        <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" crossOrigin="anonymous" />
+        <link rel="apple-touch-icon" href="favicon-apple-touch.png" sizes="180x180" crossOrigin="anonymous" />
         <title>Fischermatte - Software Engineer</title>
         <style type="text/css">{dom.css()}</style>
       </Head>
@@ -35,7 +35,12 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
         <div className="flex">
           <div className="flex bg-accent-normal">
             <Link href="/">
-              <a className="py-3 px-5 text-accent-dark text-center">fischermatte</a>
+              <a className="py-3 px-5 text-accent-dark">
+                <div className="flex flex-col">
+                  <div className="text-lg mr-3">fischermatte</div>
+                  <div className="text-xs self-end">engineering</div>
+                </div>
+              </a>
             </Link>
           </div>
           <div className={`flex-grow  ${styles.fill} `}>{}</div>

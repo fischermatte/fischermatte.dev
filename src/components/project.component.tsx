@@ -24,7 +24,7 @@ export default class ProjectComponent extends React.Component<Props> {
           {/*)}*/}
         </h2>
         {project.customer && (
-          <div className="text-base text-accent-normal opacity-70 mb-3">
+          <div className="text-base opacity-90 mb-3">
             {period}
             {' | '}
             <a

@@ -21,14 +21,14 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="keywords"
-          content="fischermatte, engineering, cloud, serverless, domain driven design, software engineer, bern, switzerland, schweiz"
+          content="fischermatte, engineering, cloud, serverless, domain driven design, software engineer, software development, bern, switzerland, schweiz"
         />
-        <meta name="description" content="fischermatte engineering - software engineer in bern, switzerland" />
+        <meta name="description" content="Fischermatte - Software Engineer in Bern, Switzerland" />
         <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
         <link rel="icon" type="image/png" href="/favicon-512x512.png" sizes="512x512" />
         <link rel="apple-touch-icon" href="/favicon-apple-touch.png" sizes="180x180" />
-        <title>Fischermatte Engineering</title>
+        <title>Fischermatte - Software Engineer</title>
         <style type="text/css">{dom.css()}</style>
       </Head>
       <header className="py-6">
@@ -38,7 +38,7 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
               <a className="py-3 px-5 text-accent-dark">
                 <div className="flex flex-col">
                   <div className="text-lg mr-3">fischermatte</div>
-                  <div className="text-xs self-end">engineering</div>
+                  <div className="text-xs self-end">software engineer</div>
                 </div>
               </a>
             </Link>

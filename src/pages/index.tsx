@@ -31,7 +31,7 @@ export default class Home extends React.Component<Props> {
                 'Cloud',
                 'Share',
                 'Tailwind CSS',
-                '❤️ LineageOS ❤️',
+                '❤ LineageOS ❤',
                 'Cycling',
                 'Typescript',
                 'Guitar 🎵',
@@ -48,16 +48,14 @@ export default class Home extends React.Component<Props> {
           <a className="text-accent-normal" href="https://github.com/fischermatte" target="_blank" rel="noreferrer">
             fischermatte
           </a>
-          {', I am a Software Engineer located in Bern, Switzerland. In this paragraph I would like to place some more ' +
+          {', I am a Software Engineer located in Bern, Switzerland. In the next paragraph I would like to place some more ' +
             'fancy text but since no one is reading this anyway I will go on with lorem ipsum:'}
         </p>
         <p className="mt-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Dignissim sodales ut eu sem. Mauris augue neque gravida in fermentum et sollicitudin.
           Scelerisque viverra mauris in aliquam sem fringilla. Amet nisl purus in mollis. Pharetra vel turpis nunc eget.
-          Amet consectetur adipiscing elit ut aliquam purus sit. Massa placerat duis ultricies lacus. Enim sit amet
-          venenatis urna. Suspendisse potenti nullam ac tortor vitae. In eu mi bibendum neque. Erat pellentesque
-          adipiscing commodo elit at. Nulla porttitor massa id neque aliquam vestibulum morbi blandit.
+          Amet consectetur adipiscing elit ut aliquam purus sit. Massa placerat duis ultricies lacus.
         </p>
         <p className="mt-6">Sincerely yours</p>
         <p className="mt-6">

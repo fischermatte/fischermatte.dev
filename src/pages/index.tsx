@@ -47,7 +47,7 @@ const Home: React.FC<Props> = () => {
         <a className="text-accent-normal" href="https://github.com/fischermatte" target="_blank" rel="noreferrer">
           fischermatte
         </a>
-        {', I am a Software Engineer located in Bern, Switzerland. In the next paragraph I would like to place some more ' +
+        {', I am a Software Engineer located in Bern, Switzerland. In the next paragraph I would like to place some ' +
           'fancy text but since no one is reading this anyway I will go on with lorem ipsum.'}
       </p>
       <p className="mt-6">

@@ -65,6 +65,7 @@ export const projects: Project[] = [
   },
   {
     title: 'PostAuto - Integrated System Architecture (PA-ISA)',
+    url: 'https://www.youtube.com/watch?v=FXHKO_ux4jI&feature=emb_title',
     customer: {
       name: 'PostAuto Schweiz AG',
       url: 'https://www.postauto.ch',
@@ -88,7 +89,8 @@ export const projects: Project[] = [
     tags: ['Angular', 'Java', 'Bootstrap', 'Spring', 'IAM'],
   },
   {
-    title: 'Swiss Voting and Election Administration System',
+    title: 'Swiss Voting and Election Administration System (SyVOTE)',
+    url: 'https://www.unisys.ch/about-us/local-solutions/syvote',
     customer: {
       name: 'Unisys Switzerland',
       url: 'http://www.unisys.ch/index.htm',
@@ -113,6 +115,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Mehrwertsteuer Online Einreichen',
+    url: 'https://www.estv.admin.ch/estv/de/home/mehrwertsteuer/dienstleistungen/mwst-online-abrechnen.html',
     customer: {
       name: 'Swiss Federal Tax Administration FTA',
       url: 'http://www.estv.admin.ch/index.html?lang=en',
@@ -121,6 +124,7 @@ export const projects: Project[] = [
       from: '2014-01-01',
       to: '2014-01-01',
     },
+    tags: ['AngularJS', 'Bootstrap', 'Javascript', 'Java', 'Primefaces'],
     description:
       'Technologies: AngularJS, Bootstrap, HTML 5, Javascript, CSS, Java, Spring, Spring Security, JPA/Hibernate, JSF/Primefaces, Maven, Jenkins, Sonar, Nexus',
   },
@@ -134,6 +138,7 @@ export const projects: Project[] = [
       from: '2013-01-01',
       to: '2014-01-01',
     },
+    tags: ['Java', 'Spring', 'SpringSecurity', 'JPA', 'Primefaces', 'Tomcat'],
     description:
       'Technologies: Java, Spring, Spring Security, JPA/Hibernate, JSF/Primefaces, HTML/JS/CSS, Maven, Jenkins, Sonar, Nexus.',
   },
@@ -147,6 +152,7 @@ export const projects: Project[] = [
       from: '2012-01-01',
       to: '2013-01-01',
     },
+    tags: ['Java', 'Spring', 'JPA', 'Primefaces', 'Tomcat'],
     description:
       'Technologies: Java, Spring, Hibernate, JPA, JSF, Primefaces, Oracle, Tomcat, CI (Maven, Hudson, Sonar, Nexus, Team Foundation Server) ',
   },
@@ -160,10 +166,11 @@ export const projects: Project[] = [
       from: '2013-01-01',
       to: '2013-01-01',
     },
-    description: 'Technologies: Java, Spring, JPA/Hibernate, JSF, Maven.',
+    tags: ['Java', 'Spring', 'JPA', 'JSF', 'Hibernate'],
   },
   {
     title: 'Digital Archive of the Swiss National Library (e-Helvetica)',
+    url: 'https://www.e-helvetica.nb.admin.ch/',
     customer: {
       name: 'Swiss National Library',
       url: 'https://www.nb.admin.ch/?lang=en',
@@ -172,7 +179,7 @@ export const projects: Project[] = [
       from: '2011-01-01',
       to: '2012-01-01',
     },
-    description: 'Technologies: Java, Spring, Hibernate, JSF, ICEFaces, Luscene, Solr, Oracle Weblogic',
+    tags: ['Java', 'Solr', 'Luscene', 'Spring', 'JPA', 'JSF', 'Hibernate', 'Weblogic'],
   },
   {
     title: 'Application for Environmental Budgeting',
@@ -184,6 +191,7 @@ export const projects: Project[] = [
       from: '2011-01-01',
       to: '2017-01-01',
     },
+    tags: ['C#', '.NET', 'MSSqlServer', 'ASP.NET', 'WPF'],
     description:
       'Technologies: C#, .NET, MS SQL Server, Entity Framework, Ext.NET, ASP.NET, WPF, Team Foundation Server ',
   },
@@ -197,6 +205,7 @@ export const projects: Project[] = [
       from: '2011-01-01',
       to: '2011-01-01',
     },
+    tags: ['C#', '.NET', 'MSSqlServer', 'ASP.NET', 'WPF'],
     description: 'Technologies: C#, .NET, MS SQL Server, Entity Framework, Ext.NET, ASP.NET, WPF ',
   },
   {
@@ -209,6 +218,7 @@ export const projects: Project[] = [
       from: '2009-01-01',
       to: '2010-01-01',
     },
+    tags: ['Java', 'Spring', 'Oracle', 'BPM'],
     description:
       'Development of a distributed multi-tiered platform for automatic acquisition, conversion and monitoring of environmental data of Switzerland. The platform is based on Java/Spring/JPA/Hibernate running on WebLogic Application Server and Oracle Database. ',
   },
@@ -222,6 +232,7 @@ export const projects: Project[] = [
       from: '2008-01-01',
       to: '2009-01-01',
     },
+    tags: ['Mobile', 'Javascript', 'HTML'],
     description:
       'Development of mobile and web applications for Nokia Maps with a strong focus on drive and walk navigation. Implementation of Rich Internet Applications (RIA) using Web 2.0 technologies (AJAX/JavaScript/XHTML).',
   },
@@ -241,6 +252,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Atomica Game',
+    url: 'https://github.com/fischermatte/atomica',
     customer: {
       name: 'Hagen University',
       url: 'http://www.fernuni-hagen.de/english',
@@ -378,6 +390,19 @@ export const projects: Project[] = [
         url: 'assets/projects/twin/screenshot_russia.png',
       },
     ],
+  },
+  {
+    title: 'trampstop.de',
+    url: 'https://github.com/fischermatte/trampstop',
+    customer: {
+      name: 'Myself',
+      url: 'https://github.com/fischermatte',
+    },
+    period: {
+      from: '2002-01-01',
+      to: '2004-01-01',
+    },
+    tags: ['PHP', 'MySQL'],
   },
   {
     title: 'Live Ticker Tour de France 2001',

@@ -1,18 +1,18 @@
 import * as React from 'react'
+import {PropsWithChildren} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from './layout.component.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {dom} from '@fortawesome/fontawesome-svg-core'
-import {PropsWithChildren} from 'react'
 import packageJson from '../../package.json'
 import {useRouter} from 'next/router'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
 
-export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) => {
+const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) => {
   const router = useRouter()
   return (
     <div className="font-mono mx-auto max-w-screen-md">
@@ -91,3 +91,4 @@ export const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> 
     </div>
   )
 }
+export default LayoutComponent

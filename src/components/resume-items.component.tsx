@@ -6,15 +6,14 @@ interface Props {
   items: ResumeItem[]
 }
 
-export default class ResumeItemsComponent extends React.Component<Props> {
-  render(): JSX.Element {
-    const items = this.props.items
-    return (
-      <div className="mt-7 space-y-7">
-        {items.map(item => (
-          <ResumeItemComponent item={item} key={item.title} />
-        ))}
-      </div>
-    )
-  }
+const ResumeItemsComponent: React.FC<Props> = props => {
+  const {items} = props
+  return (
+    <div className="mt-7 space-y-7">
+      {items.map(item => (
+        <ResumeItemComponent item={item} key={item.title} />
+      ))}
+    </div>
+  )
 }
+export default ResumeItemsComponent

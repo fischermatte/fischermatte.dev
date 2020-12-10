@@ -6,7 +6,7 @@ export interface Project {
   url?: string
   customer: {
     name: string
-    url: string
+    url?: string
   }
   period: Period
   tags?: string[]

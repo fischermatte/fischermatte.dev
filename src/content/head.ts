@@ -1,8 +1,7 @@
 export const head = {
   index: {
     title: 'Fischermatte | Cloud Software Engineer',
-    description:
-      'Hi there! This is all about me - fischermatte. I am a Software Engineer located in Bern, Switzerland. Currently focusing on Serverless and Cloud native web development.',
+    description: 'I am a Software Engineer located in Bern, Switzerland.',
     keywords:
       'fischermatte, engineering, cloud, serverless, domain driven design, tailwindcss, typescript, software engineer, software development, bern, switzerland, schweiz',
   },
@@ -18,7 +17,7 @@ export const head = {
   },
   contact: {
     title: 'Contact | Fischermatte | Cloud Software Engineer',
-    description: "Let's get in touch!",
+    description: "Any questions or need help? Don't hesitate to contact me.",
     keywords: 'contact, fischermatte, email, message',
   },
 }

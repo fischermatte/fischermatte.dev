@@ -8,21 +8,22 @@ import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-
 import {dom} from '@fortawesome/fontawesome-svg-core'
 import packageJson from '../../package.json'
 import {useRouter} from 'next/router'
-import {global} from '../content/global'
+import {head} from '../content/head'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
 
 const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) => {
   const router = useRouter()
+  const page = router.pathname === '/' ? 'index' : router.pathname.replace('/', '')
   return (
     <div className="font-mono mx-auto max-w-screen-md">
       <Head>
-        <title>{global.title}</title>
+        <title>{head[page]?.title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="keywords" content={global.meta.keywords} />
-        <meta name="description" content={global.meta.description} />
+        <meta name="keywords" content={head[page]?.keywords} />
+        <meta name="description" content={head[page]?.description} />
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" crossOrigin="anonymous" />
         <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192" crossOrigin="anonymous" />
         <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" crossOrigin="anonymous" />

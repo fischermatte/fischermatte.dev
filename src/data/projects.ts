@@ -11,7 +11,7 @@ export const projects: Project[] = [
     period: {
       from: '2020-12-01',
     },
-    tags: ['GoogleCloud', 'Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL'],
+    tags: ['GoogleCloud', 'Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL', 'TailwindCSS'],
   },
   {
     title: 'fischermatte.dev',
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     period: {
       from: '2020-12-01',
     },
-    tags: ['Next.js', 'React', 'Typescript', 'Netlify'],
+    tags: ['Next.js', 'React', 'Typescript', 'Netlify', 'TailwindCSS'],
   },
   {
     title: 'Buildigo.ch',
@@ -36,7 +36,7 @@ export const projects: Project[] = [
       from: '2020-06-01',
       to: '2020-12-22',
     },
-    tags: ['AWS', 'Angular', 'Serverless', 'Node.js', 'PostgreSQL'],
+    tags: ['AWS', 'Angular', 'Serverless', 'Node.js', 'PostgreSQL', 'TailwindCSS'],
   },
   {
     title: 'Handwerkerplatform',

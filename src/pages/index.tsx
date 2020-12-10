@@ -47,14 +47,20 @@ const Home: React.FC<Props> = () => {
         <a className="text-accent-normal" href="https://github.com/fischermatte" target="_blank" rel="noreferrer">
           fischermatte
         </a>
-        {', I am a Software Engineer located in Bern, Switzerland. In the next paragraph I would like to place some ' +
-          'fancy text but since no one is reading this anyway I will go on with lorem ipsum.'}
+        {', I am a Software Engineer located in Bern, Switzerland. Currently focusing on Serverless and Cloud native web development. ' +
+          'The next paragraph is all about tech-lorem-ipsum since nobody cares about what is written here.'}
       </p>
       <p className="mt-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Dignissim sodales ut eu sem. Mauris augue neque gravida in fermentum et sollicitudin. Scelerisque
-        viverra mauris in aliquam sem fringilla. Amet nisl purus in mollis. Pharetra vel turpis nunc eget. Amet
-        consectetur adipiscing elit ut aliquam purus sit. Massa placerat duis ultricies lacus.
+        Lorem ipsum dolor sit <span className="buzzword"> open source</span>, consectetur adipiscing{' '}
+        <span className="buzzword"> event driven</span>, sed do eiusmod tempor{' '}
+        <span className="buzzword"> Angular</span> ut labore et dolore magna aliqua.{' '}
+        <span className="buzzword"> Reactive</span> sodales ut eu sem. Mauris
+        <span className="buzzword"> aws-cdk</span> neque gravida in fermentum et
+        <span className="buzzword"> infrastructure-as-code</span>.<span className="buzzword"> API-first</span> viverra
+        mauris in <span className="buzzword">Typescript</span> sem fringilla. Amet nisl purus in
+        <span className="buzzword"> domain driven design</span>. <span className="buzzword"> NoSQL</span> vel turpis
+        nunc eget. <span className="buzzword"> TailwindCSS</span> consectetur adipiscing elit ut aliquam purus sit.
+        Massa <span className="buzzword"> Next.js</span> duis ultricies <span className="buzzword"> Firebase</span>.
       </p>
       <p className="mt-6">Sincerely yours</p>
       <p className="mt-6">

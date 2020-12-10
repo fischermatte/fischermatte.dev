@@ -8,6 +8,7 @@ import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-
 import {dom} from '@fortawesome/fontawesome-svg-core'
 import packageJson from '../../package.json'
 import {useRouter} from 'next/router'
+import {global} from '../content/global'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
@@ -17,18 +18,15 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
   return (
     <div className="font-mono mx-auto max-w-screen-md">
       <Head>
+        <title>{global.title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="keywords"
-          content="fischermatte, engineering, cloud, serverless, domain driven design, software engineer, software development, bern, switzerland, schweiz"
-        />
-        <meta name="description" content="Fischermatte - Software Engineer in Bern, Switzerland" />
+        <meta name="keywords" content={global.meta.keywords} />
+        <meta name="description" content={global.meta.description} />
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" crossOrigin="anonymous" />
         <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192" crossOrigin="anonymous" />
         <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" crossOrigin="anonymous" />
         <link rel="apple-touch-icon" href="favicon-apple-touch.png" sizes="180x180" crossOrigin="anonymous" />
-        <title>Fischermatte - Software Engineer</title>
         <style type="text/css">{dom.css()}</style>
       </Head>
       <header className="py-6">

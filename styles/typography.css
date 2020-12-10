@@ -15,7 +15,7 @@
 }
 
 body {
-  @apply font-mono text-base text-primary bg-accent-dark tracking-tight mx-6;
+  @apply font-mono text-base text-primary bg-accent-dark tracking-tight mx-6 antialiased subpixel-antialiased;
   /* optimize for prettier fonts rather than faster rendering times */
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;

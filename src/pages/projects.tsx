@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {projects} from '../data/projects'
+import {projects} from '../content/projects'
 import LayoutComponent from '../components/layout.component'
 import ProjectComponent from '../components/project.component'
 

@@ -65,7 +65,10 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           <a href="https://twitter.com/fischermatte" title="fischermatte on Twitter">
             <FontAwesomeIcon className="link" icon={faTwitter} />
           </a>
-          <a href="https://stackoverflow.com/users/524906/fischermatte" title="fischermatte on Stackoverflow">
+          <a
+            href="https://stackoverflow.com/users/524906/fischermatte?tab=profile"
+            title="fischermatte on Stackoverflow"
+          >
             <FontAwesomeIcon className="link" icon={faStackOverflow} />
           </a>
           <a href="https://github.com/fischermatte" title="fischermatte on Github">

@@ -11,6 +11,10 @@ interface Props {
 }
 
 const Home: React.FC<Props> = () => {
+  const openModal = () => {
+    console.log('open modal')
+  }
+
   return (
     <LayoutComponent>
       <div className="flex justify-center items-center bg-accent-normal text-accent-dark text-xl h-32">
@@ -47,7 +51,12 @@ const Home: React.FC<Props> = () => {
         My name is fischermatte, I am a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
         <span className="text-accent-normal">Serverless</span> and{' '}
         <span className="text-accent-normal">Cloud native web development</span>. The next paragraph is all about
-        tech-lorem-ipsum since nobody cares about what is written here.
+        tech-lorem-ipsum since nobody cares about what is written here. If you really would like to read meaningful
+        content on this page click
+        <span role="button" tabIndex={0} onKeyDown={() => open()} onClick={() => openModal()}>
+          here
+        </span>
+        .
       </p>
       <p className="mt-6">
         Lorem ipsum dolor sit <span className="buzzword">open source</span>, consectetur adipiscing{' '}

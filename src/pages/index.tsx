@@ -1,18 +1,28 @@
 import LayoutComponent from '../components/layout.component'
 import * as React from 'react'
 import dynamic from 'next/dynamic'
+import {useState} from 'react'
 
 const Typewriter = dynamic(() => import('typewriter-effect'), {
   ssr: false,
 })
+
+const LikeDialog = dynamic(() => import('./../components/like-dialog'))
 
 interface Props {
   title?: string
 }
 
 const Home: React.FC<Props> = () => {
+  const [modalOpen, setModalOpen] = useState(false)
   const openModal = () => {
     console.log('open modal')
+    setModalOpen(true)
+  }
+
+  const closeModal = () => {
+    console.log('close modal')
+    setModalOpen(false)
   }
 
   return (
@@ -47,17 +57,17 @@ const Home: React.FC<Props> = () => {
         />
       </div>
       <h1 className="mt-12">Moin!</h1>
-      <p>
+      <div>
         My name is fischermatte, I am a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
         <span className="text-accent-normal">Serverless</span> and{' '}
         <span className="text-accent-normal">Cloud native web development</span>. The next paragraph is all about
-        tech-lorem-ipsum since nobody cares about what is written here. If you really would like to read meaningful
-        content on this page click
-        <span role="button" tabIndex={0} onKeyDown={() => open()} onClick={() => openModal()}>
+        tech-lorem-ipsum since nobody cares about what is written on this website. If you really would like to read
+        meaningful content on this page click{' '}
+        <a role="button" className="link" tabIndex={0} onKeyDown={() => open()} onClick={() => openModal()}>
           here
-        </span>
-        .
-      </p>
+        </a>
+        .{modalOpen && <LikeDialog onClose={closeModal} />}
+      </div>
       <p className="mt-6">
         Lorem ipsum dolor sit <span className="buzzword">open source</span>, consectetur adipiscing{' '}
         <span className="buzzword">event driven</span>, sed do eiusmod tempor <span className="buzzword">Angular</span>{' '}

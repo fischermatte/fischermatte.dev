@@ -1,0 +1,5 @@
+2020-12-16T13:29:49.668Z
+-------------------------
+google.de - Rank:-1 => []
+google.ch - Rank:183 => [{"index":183,"url":"https://fischermatte.dev/projects"}]
+google.com - Rank:-1 => []

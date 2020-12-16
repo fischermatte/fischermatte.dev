@@ -36,7 +36,7 @@ export const projects: Project[] = [
       from: '2020-06-01',
       to: '2020-12-22',
     },
-    tags: ['AWS', 'Angular', 'Serverless', 'Node.js', 'PostgreSQL', 'TailwindCSS'],
+    tags: ['AWS', 'Angular', 'Serverless', 'Node.js', 'GraphQL', 'PostgreSQL', 'TailwindCSS'],
   },
   {
     title: 'Handwerkerplatform',

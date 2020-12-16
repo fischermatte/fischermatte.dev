@@ -31,6 +31,7 @@ const Home: React.FC<Props> = () => {
               'Share',
               'Tailwind CSS',
               '❤ LineageOS ❤',
+              'GraphQL',
               'Cycling',
               'Typescript',
               'Guitar 🎵',

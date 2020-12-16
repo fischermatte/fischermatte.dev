@@ -26,7 +26,7 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 
 function toUrlElement(page: string): string {
   const path = page.replace('src/pages', '').replace('.tsx', '')
-  if (path === '/_app') {
+  if (path.indexOf('/_') >= 0) {
     return ''
   }
   const route = path === '/index' ? '' : path

@@ -15,15 +15,11 @@ const api = {
   getPhraseById(phraseId: string): Observable<Phrase> {
     return ajax.getJSON<Phrase>(`api/phrases/${phraseId}`).pipe(take(1))
   },
-  likePhrase(phraseId: string, totalLikes: number): Observable<number> {
-    return ajax
-      .post(`api/phrases/${phraseId}/like`, {
-        totalLikes,
-      })
-      .pipe(
-        take(1),
-        map(resp => resp.response.totalLikes),
-      )
+  likePhrase(phraseId: string): Observable<number> {
+    return ajax.post(`api/phrases/${phraseId}/like`).pipe(
+      take(1),
+      map(resp => resp.response.totalLikes),
+    )
   },
 }
 
@@ -41,7 +37,7 @@ const PhraseDialog: React.FC<Props> = props => {
 
   function onLike(event: BaseSyntheticEvent): void {
     event.stopPropagation()
-    api.likePhrase(props.phraseId, phrase.totalLikes).subscribe(totalLikes => {
+    api.likePhrase(props.phraseId).subscribe(totalLikes => {
       setPhrase({
         ...phrase,
         totalLikes: totalLikes,

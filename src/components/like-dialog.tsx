@@ -1,19 +1,17 @@
 import React, {BaseSyntheticEvent, useEffect, useState} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faThumbsUp} from '@fortawesome/free-solid-svg-icons'
-import {fromFetch} from 'rxjs/fetch'
-import {switchMap} from 'rxjs/operators'
+import {Like} from '../pages/api/likes'
+import {ajax} from 'rxjs/ajax'
 
 interface Props {
   onClose: (e: BaseSyntheticEvent) => void
 }
 const LikeDialog: React.FC<Props> = props => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(undefined)
 
   useEffect(() => {
-    const subscription = fromFetch('api/likes')
-      .pipe(switchMap(response => response.json()))
-      .subscribe(likes => setCount(likes.length))
+    const subscription = ajax.getJSON<Like[]>('api/likes').subscribe(likes => setCount(likes.length))
     return () => subscription.unsubscribe()
   }, [])
 
@@ -41,7 +39,7 @@ const LikeDialog: React.FC<Props> = props => {
             >
               <FontAwesomeIcon icon={faThumbsUp} />
             </a>
-            <span className="ml-2">{count}</span>
+            <span className="ml-2">{count ?? ''}</span>
           </div>
         </div>
         <div className="text-center py-2 select-none">

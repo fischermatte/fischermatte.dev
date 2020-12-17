@@ -1,16 +1,29 @@
 import LayoutComponent from '../components/layout.component'
-import * as React from 'react'
 import dynamic from 'next/dynamic'
+import React, {BaseSyntheticEvent, useState} from 'react'
 
 const Typewriter = dynamic(() => import('typewriter-effect'), {
   ssr: false,
 })
+
+const PhraseDialog = dynamic(() => import('../components/phrase-dialog'))
 
 interface Props {
   title?: string
 }
 
 const Home: React.FC<Props> = () => {
+  const [modalOpen, setModalOpen] = useState(false)
+  const openModal = (e: BaseSyntheticEvent) => {
+    e.preventDefault()
+    setModalOpen(true)
+  }
+
+  const closeModal = (e: BaseSyntheticEvent) => {
+    e.preventDefault()
+    setModalOpen(false)
+  }
+
   return (
     <LayoutComponent>
       <div className="flex justify-center items-center bg-accent-normal text-accent-dark text-xl h-32">
@@ -43,12 +56,25 @@ const Home: React.FC<Props> = () => {
         />
       </div>
       <h1 className="mt-12">Moin!</h1>
-      <p>
+      <div>
         My name is fischermatte, I am a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
         <span className="text-accent-normal">Serverless</span> and{' '}
         <span className="text-accent-normal">Cloud native web development</span>. The next paragraph is all about
-        tech-lorem-ipsum since nobody cares about what is written here.
-      </p>
+        tech-lorem-ipsum since nobody cares about what is written on this website. If you really would like to read
+        meaningful content on this page click{' '}
+        <a
+          role="button"
+          className="link"
+          tabIndex={0}
+          onClick={e => openModal(e)}
+          onKeyDown={e => {
+            if (e.key === 'Enter') openModal(e)
+          }}
+        >
+          here
+        </a>
+        .{modalOpen && <PhraseDialog phraseId="285198995769262593" onClose={closeModal} />}
+      </div>
       <p className="mt-6">
         Lorem ipsum dolor sit <span className="buzzword">open source</span>, consectetur adipiscing{' '}
         <span className="buzzword">event driven</span>, sed do eiusmod tempor <span className="buzzword">Angular</span>{' '}

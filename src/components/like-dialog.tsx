@@ -1,12 +1,10 @@
-import React from 'react'
-import {MouseEvent, KeyboardEvent} from 'react-dom'
-import {useEffect, useState} from 'react'
+import React, {BaseSyntheticEvent, useEffect, useState} from 'react'
 import {Like} from '../pages/api/likes'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
-  onClose: () => void
+  onClose: (e: BaseSyntheticEvent) => void
 }
 
 async function fetchLikes(): Promise<Like[]> {
@@ -17,15 +15,6 @@ async function fetchLikes(): Promise<Like[]> {
   }
 }
 
-// export const getServerSideProps: GetServerSideProps<Props> = async () => {
-//   const likes = await fetchLikes()
-//   return Promise.resolve({
-//     props: {
-//       likes,
-//     },
-//   })
-// }
-
 const LikeDialog: React.FC<Props> = props => {
   const [data, setData] = useState({count: 0})
 
@@ -33,7 +22,7 @@ const LikeDialog: React.FC<Props> = props => {
     fetchLikes().then(likes => setData({count: likes.length}))
   }, [])
 
-  function onLike(event: MouseEvent | KeyboardEvent): void {
+  function onLike(event: BaseSyntheticEvent): void {
     event.stopPropagation()
     setData({count: ++data.count})
   }
@@ -42,10 +31,18 @@ const LikeDialog: React.FC<Props> = props => {
       <div className="relative p-6 bg-accent-normal w-full max-w-2xl m-auto flex-col flex">
         <div className="font-bold py-2 text-lg">Awesome!</div>
         <div className="mb-2">
-          Seems you are interested in meaningful content. Please klick the like button so a counter in a fancy cloud
+          Seems you are interested in meaningful content. Please click the like button so a counter in a fancy cloud
           database can be increased.
           <div className="py-4 text-accent-dark text-4xl  select-none">
-            <a role="button" title="Like it" onClick={e => onLike(e)} onKeyDown={e => onLike(e)} tabIndex={0}>
+            <a
+              role="button"
+              title="Like it"
+              tabIndex={0}
+              onClick={e => onLike(e)}
+              onKeyDown={e => {
+                if (e.key === 'Enter') onLike(e)
+              }}
+            >
               <FontAwesomeIcon icon={faThumbsUp} />
             </a>
             <span className="ml-2">{data.count}</span>
@@ -55,8 +52,10 @@ const LikeDialog: React.FC<Props> = props => {
           <button
             className="text-accent-normal bg-accent-dark py-2 px-4"
             tabIndex={0}
-            onKeyDown={() => props.onClose()}
-            onClick={() => props.onClose()}
+            onClick={e => props.onClose(e)}
+            onKeyDown={e => {
+              if (e.key === 'Enter') props.onClose(e)
+            }}
           >
             Close
           </button>

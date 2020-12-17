@@ -1,7 +1,6 @@
 import LayoutComponent from '../components/layout.component'
-import * as React from 'react'
 import dynamic from 'next/dynamic'
-import {useState} from 'react'
+import React, {BaseSyntheticEvent, useState} from 'react'
 
 const Typewriter = dynamic(() => import('typewriter-effect'), {
   ssr: false,
@@ -15,13 +14,13 @@ interface Props {
 
 const Home: React.FC<Props> = () => {
   const [modalOpen, setModalOpen] = useState(false)
-  const openModal = () => {
-    console.log('open modal')
+  const openModal = (e: BaseSyntheticEvent) => {
+    e.preventDefault()
     setModalOpen(true)
   }
 
-  const closeModal = () => {
-    console.log('close modal')
+  const closeModal = (e: BaseSyntheticEvent) => {
+    e.preventDefault()
     setModalOpen(false)
   }
 
@@ -63,7 +62,15 @@ const Home: React.FC<Props> = () => {
         <span className="text-accent-normal">Cloud native web development</span>. The next paragraph is all about
         tech-lorem-ipsum since nobody cares about what is written on this website. If you really would like to read
         meaningful content on this page click{' '}
-        <a role="button" className="link" tabIndex={0} onKeyDown={() => open()} onClick={() => openModal()}>
+        <a
+          role="button"
+          className="link"
+          tabIndex={0}
+          onClick={e => openModal(e)}
+          onKeyDown={e => {
+            if (e.key === 'Enter') openModal(e)
+          }}
+        >
           here
         </a>
         .{modalOpen && <LikeDialog onClose={closeModal} />}

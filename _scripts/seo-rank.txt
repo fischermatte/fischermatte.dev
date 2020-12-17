@@ -17,3 +17,9 @@ google.de|de|de  - Rank:-1 => []
 google.ch|de|ch  - Rank:138 => [{"index":138,"url":"https://fischermatte.dev/"},{"index":198,"url":"https://fischermatte.dev/projects"}]
 google.ch|en|ch  - Rank:-1 => []
 google.com|en|us  - Rank:-1 => []
+
+2020-12-17T13:11:00.065Z
+-------------------------
+google.de - Rank:107 => [{"index":107,"url":"https://fischermatte.dev/"},{"index":169,"url":"https://fischermatte.dev/projects"}]
+google.ch - Rank:143 => [{"index":143,"url":"https://fischermatte.dev/"},{"index":192,"url":"https://fischermatte.dev/projects"}]
+google.com - Rank:183 => [{"index":183,"url":"https://fischermatte.dev/projects"},{"index":184,"url":"https://fischermatte.dev/"}]

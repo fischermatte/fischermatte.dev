@@ -1,30 +1,25 @@
 import React, {BaseSyntheticEvent, useEffect, useState} from 'react'
-import {Like} from '../pages/api/likes'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faThumbsUp} from '@fortawesome/free-solid-svg-icons'
+import {fromFetch} from 'rxjs/fetch'
+import {switchMap} from 'rxjs/operators'
 
 interface Props {
   onClose: (e: BaseSyntheticEvent) => void
 }
-
-async function fetchLikes(): Promise<Like[]> {
-  try {
-    return await fetch(`/api/likes`).then(res => res.json())
-  } catch (error) {
-    throw new Error(error)
-  }
-}
-
 const LikeDialog: React.FC<Props> = props => {
-  const [data, setData] = useState({count: 0})
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
-    fetchLikes().then(likes => setData({count: likes.length}))
+    const subscription = fromFetch('api/likes')
+      .pipe(switchMap(response => response.json()))
+      .subscribe(likes => setCount(likes.length))
+    return () => subscription.unsubscribe()
   }, [])
 
   function onLike(event: BaseSyntheticEvent): void {
     event.stopPropagation()
-    setData({count: ++data.count})
+    setCount(count + 1)
   }
   return (
     <div className="fixed inset-0 z-50 overflow-auto bg-gray-800 bg-opacity-90 flex text-accent-dark">
@@ -46,7 +41,7 @@ const LikeDialog: React.FC<Props> = props => {
             >
               <FontAwesomeIcon icon={faThumbsUp} />
             </a>
-            <span className="ml-2">{data.count}</span>
+            <span className="ml-2">{count}</span>
           </div>
         </div>
         <div className="text-center py-2 select-none">

@@ -6,7 +6,7 @@ const Typewriter = dynamic(() => import('typewriter-effect'), {
   ssr: false,
 })
 
-const LikeDialog = dynamic(() => import('./../components/like-dialog'))
+const PhraseDialog = dynamic(() => import('../components/phrase-dialog'))
 
 interface Props {
   title?: string
@@ -73,7 +73,7 @@ const Home: React.FC<Props> = () => {
         >
           here
         </a>
-        .{modalOpen && <LikeDialog onClose={closeModal} />}
+        .{modalOpen && <PhraseDialog phraseId="1" onClose={closeModal} />}
       </div>
       <p className="mt-6">
         Lorem ipsum dolor sit <span className="buzzword">open source</span>, consectetur adipiscing{' '}

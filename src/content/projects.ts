@@ -23,7 +23,7 @@ export const projects: Project[] = [
     period: {
       from: '2020-12-01',
     },
-    tags: ['Next.js', 'React', 'Typescript', 'Netlify', 'TailwindCSS'],
+    tags: ['Next.js', 'React', 'Typescript', 'Netlify', 'TailwindCSS', 'FaunaDB'],
   },
   {
     title: 'Buildigo.ch',

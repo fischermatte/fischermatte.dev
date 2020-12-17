@@ -36,7 +36,7 @@ const ProjectComponent: React.FC<Props> = props => {
         <div className="text-base opacity-90 mb-3">
           {period}
           {' | '}
-          <a className="underline hover:text-accent-light" href={project.customer.url} target="_blank" rel="noreferrer">
+          <a className="link" href={project.customer.url} target="_blank" rel="noreferrer">
             {project.customer?.name}
           </a>
         </div>

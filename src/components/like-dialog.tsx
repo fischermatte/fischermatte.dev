@@ -33,8 +33,9 @@ const LikeDialog: React.FC<Props> = props => {
         <div className="mb-2">
           Seems you are interested in meaningful content. Please click the like button so a counter in a fancy cloud
           database can be increased.
-          <div className="py-4 text-accent-dark text-4xl  select-none">
+          <div className="py-4 text-accent-dark text-4xl  select-none ">
             <a
+              className="hover:text-accent-contrast"
               role="button"
               title="Like it"
               tabIndex={0}
@@ -50,7 +51,7 @@ const LikeDialog: React.FC<Props> = props => {
         </div>
         <div className="text-center py-2 select-none">
           <button
-            className="text-accent-normal bg-accent-dark py-2 px-4"
+            className="text-accent-normal bg-accent-dark py-2 px-4 hover:bg-accent-contrast"
             tabIndex={0}
             onClick={e => props.onClose(e)}
             onKeyDown={e => {

@@ -40,7 +40,7 @@ const PhraseDialog: React.FC<Props> = props => {
     api.likePhrase(props.phraseId).subscribe(totalLikes => {
       setPhrase({
         ...phrase,
-        totalLikes: totalLikes,
+        totalLikes,
       })
     })
   }

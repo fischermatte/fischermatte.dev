@@ -33,7 +33,7 @@ const PhraseDialog: React.FC<Props> = props => {
       setLoading(false)
     })
     return () => subscription.unsubscribe()
-  }, [])
+  }, [props.phraseId])
 
   function onLike(event: BaseSyntheticEvent): void {
     event.stopPropagation()

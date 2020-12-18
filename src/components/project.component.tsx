@@ -14,23 +14,14 @@ const ProjectComponent: React.FC<Props> = props => {
   return (
     <div>
       <h2>
-        {project.title}
+        {!project.url && <span>{project.title}</span>}
         {project.url && (
           <span>
-            {' '}
             <a href={project.url} target="_blank" rel="noreferrer" aria-label={'Link to ' + project.title}>
-              <FontAwesomeIcon icon={faExternalLinkAlt} />
+              {project.title} <FontAwesomeIcon icon={faExternalLinkAlt} />
             </a>
           </span>
         )}
-        {/*{project.url && (*/}
-        {/*  <span>*/}
-        {/*    {' '}*/}
-        {/*    <a className="link" href={project.url} target="_blank">*/}
-        {/*      {project.url?.replace('https://', '')}*/}
-        {/*    </a>*/}
-        {/*  </span>*/}
-        {/*)}*/}{' '}
       </h2>
       {project.customer && (
         <div className="text-base opacity-90 mb-3">
@@ -51,17 +42,6 @@ const ProjectComponent: React.FC<Props> = props => {
           ))}
         </div>
       )}
-      {/*{project.description && <div className="">{project.description}</div>}*/}
-      {/*{project.links?.length > 0 && (*/}
-      {/*  <div className="">*/}
-      {/*    Links:{' '}*/}
-      {/*    {project.links?.map(link => (*/}
-      {/*      <a key={link.url} className="link mr-4" href={link.url} target="_blank">*/}
-      {/*        {link.title}*/}
-      {/*      </a>*/}
-      {/*    ))}*/}
-      {/*  </div>*/}
-      {/*)}*/}
     </div>
   )
 }

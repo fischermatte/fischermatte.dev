@@ -3,6 +3,7 @@ import {Period} from './common.types'
 interface Job {
   employer: string
   location: string
+  url?: string
   period: Period
 }
 
@@ -15,6 +16,7 @@ interface Certificate {
 interface Education {
   title: string
   locations: EducationLocation[]
+  url?: string
 }
 
 interface EducationLocation {
@@ -30,4 +32,5 @@ export interface Resume {
 export interface ResumeItem {
   title: string
   subtitles: string[]
+  url?: string
 }

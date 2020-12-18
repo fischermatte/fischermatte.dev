@@ -44,16 +44,16 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
         </div>
         <nav className="mt-4 text-primary flex space-x-4">
           <Link href="/">
-            <a className={router.pathname == '/' ? styles.navlinkActive : styles.navlink}>Home</a>
+            <a className={router.pathname == '/' ? styles.navLinkActive : styles.navLink}>Home</a>
           </Link>
           <Link href="/resume">
-            <a className={router.pathname == '/resume' ? styles.navlinkActive : styles.navlink}>Resume</a>
+            <a className={router.pathname == '/resume' ? styles.navLinkActive : styles.navLink}>Resume</a>
           </Link>
           <Link href="/projects">
-            <a className={router.pathname == '/projects' ? styles.navlinkActive : styles.navlink}>Projects</a>
+            <a className={router.pathname == '/projects' ? styles.navLinkActive : styles.navLink}>Projects</a>
           </Link>
           <Link href="/contact">
-            <a className={router.pathname == '/contact' ? styles.navlinkActive : styles.navlink}>Contact</a>
+            <a className={router.pathname == '/contact' ? styles.navLinkActive : styles.navLink}>Contact</a>
           </Link>
         </nav>
       </header>

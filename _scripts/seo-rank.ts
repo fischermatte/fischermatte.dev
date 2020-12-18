@@ -19,7 +19,7 @@ interface SearchResultItem {
   url: string
 }
 
-function serpOptions(host: string, hl: string, gl: string): any {
+function serpOptions(host: string, hl: string, gl: string): unknown {
   return {
     host,
     qs: {

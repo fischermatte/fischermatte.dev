@@ -14,12 +14,12 @@ interface Props {
 
 const Home: React.FC<Props> = () => {
   const [modalOpen, setModalOpen] = useState(false)
-  const openModal = (e: BaseSyntheticEvent) => {
+  const openModal = (e: BaseSyntheticEvent): void => {
     e.preventDefault()
     setModalOpen(true)
   }
 
-  const closeModal = (e: BaseSyntheticEvent) => {
+  const closeModal = (e: BaseSyntheticEvent): void => {
     e.preventDefault()
     setModalOpen(false)
   }
@@ -64,7 +64,7 @@ const Home: React.FC<Props> = () => {
         meaningful content on this page click{' '}
         <a
           role="button"
-          className="link"
+          className="link underline"
           tabIndex={0}
           onClick={e => openModal(e)}
           onKeyDown={e => {

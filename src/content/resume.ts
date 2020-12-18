@@ -5,6 +5,7 @@ export const resume: Resume = {
     {
       employer: 'die Mobiliar',
       location: 'Bern, Switzerland',
+      url: 'https://www.mobiliar.ch',
       period: {
         from: '2018-03-01',
         to: 'Present',
@@ -13,6 +14,7 @@ export const resume: Resume = {
     {
       employer: 'Unisys Switzerland',
       location: 'Bern, Switzerland',
+      url: 'https://www.unisys.ch',
       period: {
         from: '2009-11-01',
         to: '2018-02-01',
@@ -21,6 +23,7 @@ export const resume: Resume = {
     {
       employer: 'Tieto Deutschland GmbH',
       location: 'Berlin, Germany',
+      url: 'https://www.tieto.com/de/ueber-uns/tieto-germany',
       period: {
         from: '2008-08-01',
         to: '2009-09-01',
@@ -29,6 +32,7 @@ export const resume: Resume = {
     {
       employer: 'ARC-GREENLAB GmbH',
       location: 'Berlin, Germany',
+      url: 'https://www.arc-greenlab.de',
       period: {
         from: '2004-03-01',
         to: '2008-07-01',
@@ -37,6 +41,7 @@ export const resume: Resume = {
     {
       employer: 'DER SPIEGEL',
       location: 'Hamburg, Germany',
+      url: 'https://www.spiegelgruppe.de',
       period: {
         from: '2001-03-01',
         to: '2001-07-01',
@@ -46,6 +51,7 @@ export const resume: Resume = {
   educations: [
     {
       title: 'Master of Computer Science, Software Engineering, 2009',
+      url: 'https://www.fernuni-hagen.de/mi/studium/msc_informatik',
       locations: [
         {
           location: 'Hagen University (Distance Learning University), Germany',
@@ -58,6 +64,7 @@ export const resume: Resume = {
     },
     {
       title: 'Diplom-Ingenieur (FH), Geoinformatics and Cartography, 2005',
+      url: 'https://www.hs-karlsruhe.de/en/geomatics',
       locations: [
         {
           location: 'University of Applied Sciences Karlsruhe, Germany',

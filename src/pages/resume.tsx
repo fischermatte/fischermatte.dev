@@ -19,6 +19,7 @@ const Resume: React.FunctionComponent<Props> = () => {
               return {
                 title: j.employer,
                 subtitles: [subtitle],
+                url: j.url,
               }
             })}
           />
@@ -31,6 +32,7 @@ const Resume: React.FunctionComponent<Props> = () => {
               return {
                 title: c.name,
                 subtitles: [subtitle],
+                url: c.url,
               }
             })}
           />
@@ -45,6 +47,7 @@ const Resume: React.FunctionComponent<Props> = () => {
                   const period = periodText(l.period)
                   return `${period} | ${l.location}`
                 }),
+                url: e.url,
               }
             })}
           />

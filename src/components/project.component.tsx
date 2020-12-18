@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import {Project} from '../shared/project.types'
 import {periodText} from '../shared/period.utils'
 import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'

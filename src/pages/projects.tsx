@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import {projects} from '../content/projects'
 import LayoutComponent from '../components/layout.component'
 import ProjectComponent from '../components/project.component'

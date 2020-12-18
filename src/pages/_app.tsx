@@ -1,6 +1,6 @@
 import '../../styles/main.css'
 import {AppProps} from 'next/app'
-import * as React from 'react'
+import React from 'react'
 
 export default class MyApp extends React.Component<AppProps> {
   render(): JSX.Element {

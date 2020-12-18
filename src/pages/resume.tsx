@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import {periodText} from '../shared/period.utils'
 import {resume} from '../content/resume'
 import ResumeItemsComponent from '../components/resume-items.component'

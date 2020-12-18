@@ -1,14 +1,13 @@
-import * as React from 'react'
-import {PropsWithChildren} from 'react'
+import React, {PropsWithChildren} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from './layout.component.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
-import {dom} from '@fortawesome/fontawesome-svg-core'
 import packageJson from '../../package.json'
 import {useRouter} from 'next/router'
 import {head} from '../content/head'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
@@ -28,7 +27,6 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
         <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192" />
         <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" />
         <link rel="apple-touch-icon" href="favicon-apple-touch.png" sizes="180x180" />
-        <style type="text/css">{dom.css()}</style>
       </Head>
       <header className="py-6">
         <div className="flex">

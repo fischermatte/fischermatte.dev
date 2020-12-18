@@ -79,7 +79,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           </a>
         </div>
         <div className="text-sm">© fischermatte 2020</div>
-        <div className="text-xs mt-2 opacity-30">
+        <div className="text-xs mt-2  opacity-60">
           <a
             href="https://github.com/fischermatte/fischermatte-next"
             target="_blank"

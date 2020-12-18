@@ -24,10 +24,10 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="keywords" content={head[page]?.keywords} />
         <meta name="description" content={head[page]?.description} />
-        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" crossOrigin="anonymous" />
-        <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192" crossOrigin="anonymous" />
-        <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" crossOrigin="anonymous" />
-        <link rel="apple-touch-icon" href="favicon-apple-touch.png" sizes="180x180" crossOrigin="anonymous" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="favicon-apple-touch.png" sizes="180x180" />
         <style type="text/css">{dom.css()}</style>
       </Head>
       <header className="py-6">

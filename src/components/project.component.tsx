@@ -18,7 +18,7 @@ const ProjectComponent: React.FC<Props> = props => {
         {project.url && (
           <span>
             {' '}
-            <a href={project.url} target="_blank" rel="noreferrer">
+            <a href={project.url} target="_blank" rel="noreferrer" aria-label={'Link to ' + project.title}>
               <FontAwesomeIcon icon={faExternalLinkAlt} />
             </a>
           </span>

@@ -66,8 +66,8 @@ const PhraseDialog: React.FC<Props> = props => {
                     }}
                   >
                     <FontAwesomeIcon icon={faThumbsUp} />
+                    <span className="ml-2">{phrase.totalLikes}</span>
                   </a>
-                  <span className="ml-2">{phrase.totalLikes}</span>
                 </div>
               </div>
             </div>

@@ -380,14 +380,14 @@ export const projects: Project[] = [
     tags: ['Flash', 'Maps'],
     description:
       'A Flash-based map with information about Russian-German town twinning. Used technologies: XML, Adobe Flash, ActionScript.',
-    links: [
+    images: [
       {
         title: 'screenshot 1',
-        url: 'assets/projects/twin/screenshot_germany.png',
+        url: '/images/russlandpartner/screenshot_germany.png',
       },
       {
         title: 'screenshot 2',
-        url: 'assets/projects/twin/screenshot_russia.png',
+        url: '/images/russlandpartner/screenshot_russia.png',
       },
     ],
   },
@@ -417,14 +417,14 @@ export const projects: Project[] = [
     tags: ['Flash'],
     description:
       'Flash-based Live Ticker for the Tour de France 2001. Real time stage tracking with maps and profiles.',
-    links: [
+    images: [
       {
         title: 'screenshot 1',
-        url: 'assets/projects/tour/tour_screenshot_overview.png',
+        url: '/images/tour/tour_screenshot_overview.png',
       },
       {
         title: 'screenshot 2',
-        url: 'assets/projects/tour/tour_screenshot_etappe.png',
+        url: '/images/tour/tour_screenshot_etappe.png',
       },
     ],
   },

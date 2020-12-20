@@ -10,5 +10,6 @@ export interface Project {
   }
   period: Period
   tags?: string[]
+  images?: {title: string; url: string}[]
   links?: {title: string; url: string}[]
 }

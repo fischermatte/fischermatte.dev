@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {BaseSyntheticEvent, useState} from 'react'
 import {Project} from '../shared/project.types'
 import {periodText} from '../shared/period.utils'
 import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import dynamic from 'next/dynamic'
+
+const GalleryDialog = dynamic(() => import('../components/gallery-dialog'))
 
 interface Props {
   project: Project
@@ -11,6 +14,16 @@ interface Props {
 const ProjectComponent: React.FC<Props> = props => {
   const {project} = props
   const period = periodText(project.period)
+  const [modalOpen, setModalOpen] = useState(false)
+  const openModal = (e: BaseSyntheticEvent): void => {
+    e.preventDefault()
+    setModalOpen(true)
+  }
+
+  const closeModal = (e: BaseSyntheticEvent): void => {
+    e.preventDefault()
+    setModalOpen(false)
+  }
   return (
     <div>
       <h2>
@@ -40,6 +53,22 @@ const ProjectComponent: React.FC<Props> = props => {
               {tag}{' '}
             </span>
           ))}
+        </div>
+      )}
+      {project.images && (
+        <div>
+          <a
+            role="button"
+            className="link underline"
+            tabIndex={0}
+            onClick={e => openModal(e)}
+            onKeyDown={e => {
+              if (e.key === 'Enter') openModal(e)
+            }}
+          >
+            Screenshots
+          </a>
+          {modalOpen && <GalleryDialog images={project.images} onClose={closeModal} />}
         </div>
       )}
     </div>

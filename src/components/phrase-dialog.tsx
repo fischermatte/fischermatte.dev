@@ -2,7 +2,7 @@ import React, {BaseSyntheticEvent, useEffect, useState} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 import {ajax} from 'rxjs/ajax'
-import {Phrase} from '../shared/phrase.types'
+import {Phrase} from '../core/shared/phrase.types'
 import {Observable} from 'rxjs'
 import {map, take} from 'rxjs/operators'
 

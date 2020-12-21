@@ -1,6 +1,6 @@
 import React from 'react'
-import {periodText} from '../shared/period.utils'
-import {resume} from '../content/resume'
+import {periodText} from '../core/client/period.utils'
+import {resume} from '../core/client/content/resume'
 import ResumeItemsComponent from '../components/resume-items.component'
 import LayoutComponent from '../components/layout.component'
 

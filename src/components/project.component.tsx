@@ -1,6 +1,6 @@
 import React, {BaseSyntheticEvent, useState} from 'react'
-import {Project} from '../shared/project.types'
-import {periodText} from '../shared/period.utils'
+import {Project} from '../core/shared/project.types'
+import {periodText} from '../core/client/period.utils'
 import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import dynamic from 'next/dynamic'

@@ -1,4 +1,4 @@
-import {Period} from './common.types'
+import {Period} from '../shared/common.types'
 
 function parseYear(date: string): string | undefined {
   if (!date) {

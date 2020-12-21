@@ -1,5 +1,5 @@
 import React from 'react'
-import {ResumeItem} from '../shared/resume.types'
+import {ResumeItem} from '../core/shared/resume.types'
 import ResumeItemComponent from './resume-item.component'
 
 interface Props {

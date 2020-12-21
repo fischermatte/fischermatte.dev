@@ -1,5 +1,5 @@
 import React from 'react'
-import {projects} from '../content/projects'
+import {projects} from '../core/client/content/projects'
 import LayoutComponent from '../components/layout.component'
 import ProjectComponent from '../components/project.component'
 

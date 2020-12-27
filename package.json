@@ -46,6 +46,7 @@
     "postcss": "^8.2.1",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
+    "request": "^2.88.2",
     "serp": "^2.1.0",
     "tailwindcss": "^2.0.2",
     "ts-node": "^9.1.1",

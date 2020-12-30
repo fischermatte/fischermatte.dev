@@ -1,5 +1,12 @@
 import {Period} from './common.types'
 
+export interface Image {
+  title: string
+  url: string
+  width: number
+  height: number
+}
+
 export interface Project {
   title: string
   description?: string
@@ -10,6 +17,6 @@ export interface Project {
   }
   period: Period
   tags?: string[]
-  images?: {title: string; url: string}[]
+  images?: Image[]
   links?: {title: string; url: string}[]
 }

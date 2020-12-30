@@ -384,10 +384,14 @@ export const projects: Project[] = [
       {
         title: 'screenshot 1',
         url: '/images/russlandpartner/screenshot_germany.png',
+        width: 405,
+        height: 329,
       },
       {
         title: 'screenshot 2',
         url: '/images/russlandpartner/screenshot_russia.png',
+        width: 406,
+        height: 330,
       },
     ],
   },
@@ -421,10 +425,14 @@ export const projects: Project[] = [
       {
         title: 'screenshot 1',
         url: '/images/tour/tour_screenshot_overview.png',
+        width: 662,
+        height: 425,
       },
       {
         title: 'screenshot 2',
         url: '/images/tour/tour_screenshot_etappe.png',
+        width: 629,
+        height: 428,
       },
     ],
   },

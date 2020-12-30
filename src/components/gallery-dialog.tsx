@@ -24,7 +24,7 @@ const GalleryDialog: React.FC<Props> = props => {
         {props.images && (
           <div className="flex flex-col gap-2">
             {props.images
-              ?.filter((v, index) => index === 0)
+              ?.filter((v, index) => index === 1)
               .map(image => (
                 <Image key={image.url} src={image.url} alt="Picture of the author" width={500} height={500} />
               ))}

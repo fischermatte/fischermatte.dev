@@ -56,7 +56,7 @@ const ProjectComponent: React.FC<Props> = props => {
         </div>
       )}
       {project.images && (
-        <div>
+        <div className="mt-2">
           <a
             role="button"
             className="link underline"

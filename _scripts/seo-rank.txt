@@ -51,3 +51,16 @@ google.com - Rank:78 => [{"index":78,"url":"https://fischermatte.dev/"},{"index"
 google.de - Rank:71 => [{"index":71,"url":"https://fischermatte.dev/"},{"index":89,"url":"https://fischermatte.dev/projects"},{"index":124,"url":"https://fischermatte.dev/resume"}]
 google.ch - Rank:71 => [{"index":71,"url":"https://fischermatte.dev/"},{"index":89,"url":"https://fischermatte.dev/projects"},{"index":124,"url":"https://fischermatte.dev/resume"}]
 google.com - Rank:71 => [{"index":71,"url":"https://fischermatte.dev/"},{"index":89,"url":"https://fischermatte.dev/projects"},{"index":124,"url":"https://fischermatte.dev/resume"}]
+
+
+2020-12-30T23:13:58.182Z
+-------------------------
+google.de|undefined|undefined  - Rank:8 => [{"index":8,"url":"https://fischermatte.dev/"},{"index":39,"url":"https://fischermatte.dev/projects"},{"index":107,"url":"https://fischermatte.dev/resume"}]
+google.ch|undefined|undefined  - Rank:8 => [{"index":8,"url":"https://fischermatte.dev/"},{"index":50,"url":"https://fischermatte.dev/projects"},{"index":129,"url":"https://fischermatte.dev/resume"}]
+google.com|undefined|undefined  - Rank:8 => [{"index":8,"url":"https://fischermatte.dev/"},{"index":39,"url":"https://fischermatte.dev/projects"},{"index":107,"url":"https://fischermatte.dev/resume"}]
+
+2020-12-30T23:16:18.813Z
+-------------------------
+google.de - Rank:-1 => []
+google.ch - Rank:8 => [{"index":8,"url":"https://fischermatte.dev/"},{"index":39,"url":"https://fischermatte.dev/projects"},{"index":107,"url":"https://fischermatte.dev/resume"}]
+google.com - Rank:8 => [{"index":8,"url":"https://fischermatte.dev/"},{"index":39,"url":"https://fischermatte.dev/projects"},{"index":107,"url":"https://fischermatte.dev/resume"}]

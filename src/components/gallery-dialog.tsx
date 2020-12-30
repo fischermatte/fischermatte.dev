@@ -30,7 +30,7 @@ const GalleryDialog: React.FC<Props> = props => {
               ))}
           </div>
         )}
-        <div className="text-center py-2 select-none">
+        <div className="text-center mt-6 select-none">
           <button
             className="text-accent-normal bg-accent-dark py-2 px-4 hover:bg-accent-contrast"
             tabIndex={0}

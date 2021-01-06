@@ -59,7 +59,7 @@ export const projects: Project[] = [
     },
     period: {
       from: '2018-03-01',
-      to: '2018-03-01',
+      to: '2019-07-01',
     },
     tags: ['Kubernetes', 'Microservices', 'JavaEE', 'Angular', 'Typescript'],
   },

@@ -36,7 +36,7 @@ const ProjectComponent: React.FC<Props> = props => {
           </span>
         )}
       </h2>
-      <p>
+      <div>
         {project.customer && (
           <div className="text-base opacity-90 mb-3">
             {period}
@@ -72,7 +72,7 @@ const ProjectComponent: React.FC<Props> = props => {
             {modalOpen && <GalleryDialog images={project.images} onClose={closeModal} />}
           </div>
         )}
-      </p>
+      </div>
     </div>
   )
 }

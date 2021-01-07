@@ -8,7 +8,7 @@ interface Props {
 const ResumeItemComponent: React.FC<Props> = props => {
   const {item} = props
   return (
-    <div>
+    <p>
       <div className="mb-1">
         {!item.url && <span>{item.title}</span>}
         {item.url && (
@@ -24,7 +24,7 @@ const ResumeItemComponent: React.FC<Props> = props => {
           </div>
         ))}
       </div>
-    </div>
+    </p>
   )
 }
 export default ResumeItemComponent

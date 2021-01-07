@@ -25,7 +25,7 @@ const ProjectComponent: React.FC<Props> = props => {
     setModalOpen(false)
   }
   return (
-    <div>
+    <p>
       <h2>
         {!project.url && <span>{project.title}</span>}
         {project.url && (
@@ -36,42 +36,44 @@ const ProjectComponent: React.FC<Props> = props => {
           </span>
         )}
       </h2>
-      {project.customer && (
-        <div className="text-base opacity-90 mb-3">
-          {period}
-          {' | '}
-          <a className="link" href={project.customer.url} target="_blank" rel="noreferrer">
-            {project.customer?.name}
-          </a>
-        </div>
-      )}
-      {project.tags && (
-        <div className="text-sm opacity-60">
-          {project.tags?.map(tag => (
-            <span key={tag}>
-              {'#'}
-              {tag}{' '}
-            </span>
-          ))}
-        </div>
-      )}
-      {project.images && (
-        <div className="mt-2">
-          <a
-            role="button"
-            className="link underline"
-            tabIndex={0}
-            onClick={e => openModal(e)}
-            onKeyDown={e => {
-              if (e.key === 'Enter') openModal(e)
-            }}
-          >
-            Screenshots
-          </a>
-          {modalOpen && <GalleryDialog images={project.images} onClose={closeModal} />}
-        </div>
-      )}
-    </div>
+      <p>
+        {project.customer && (
+          <div className="text-base opacity-90 mb-3">
+            {period}
+            {' | '}
+            <a className="link" href={project.customer.url} target="_blank" rel="noreferrer">
+              {project.customer?.name}
+            </a>
+          </div>
+        )}
+        {project.tags && (
+          <div className="text-sm opacity-60">
+            {project.tags?.map(tag => (
+              <span key={tag}>
+                {'#'}
+                {tag}{' '}
+              </span>
+            ))}
+          </div>
+        )}
+        {project.images && (
+          <div className="mt-2">
+            <a
+              role="button"
+              className="link underline"
+              tabIndex={0}
+              onClick={e => openModal(e)}
+              onKeyDown={e => {
+                if (e.key === 'Enter') openModal(e)
+              }}
+            >
+              Screenshots
+            </a>
+            {modalOpen && <GalleryDialog images={project.images} onClose={closeModal} />}
+          </div>
+        )}
+      </p>
+    </p>
   )
 }
 export default ProjectComponent

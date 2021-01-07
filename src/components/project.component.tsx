@@ -25,7 +25,7 @@ const ProjectComponent: React.FC<Props> = props => {
     setModalOpen(false)
   }
   return (
-    <p>
+    <div>
       <h2>
         {!project.url && <span>{project.title}</span>}
         {project.url && (
@@ -73,7 +73,7 @@ const ProjectComponent: React.FC<Props> = props => {
           </div>
         )}
       </p>
-    </p>
+    </div>
   )
 }
 export default ProjectComponent

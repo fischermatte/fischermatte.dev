@@ -93,7 +93,7 @@ export const projects: Project[] = [
     url: 'https://www.unisys.ch/about-us/local-solutions/syvote',
     customer: {
       name: 'Unisys Switzerland',
-      url: 'http://www.unisys.ch/index.htm',
+      url: 'https://www.unisys.ch',
     },
     period: {
       from: '2014-01-01',
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     url: 'https://www.estv.admin.ch/estv/de/home/mehrwertsteuer/dienstleistungen/mwst-online-abrechnen.html',
     customer: {
       name: 'Swiss Federal Tax Administration FTA',
-      url: 'http://www.estv.admin.ch/index.html?lang=en',
+      url: 'http://www.estv.admin.ch',
     },
     period: {
       from: '2014-01-01',
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     title: 'Applikationsplattform Verbraucherschutz',
     customer: {
       name: 'Swiss Federal Office of Public Health FOPH',
-      url: 'http://www.bag.admin.ch/index.html?lang=en',
+      url: 'https://www.bag.admin.ch',
     },
     period: {
       from: '2013-01-01',
@@ -146,7 +146,7 @@ export const projects: Project[] = [
     title: 'Country of Origin Information System',
     customer: {
       name: 'Swiss Federal Office of Migration FOM',
-      url: 'https://www.bfm.admin.ch/bfm/en/home.html',
+      url: 'https://www.bfm.admin.ch',
     },
     period: {
       from: '2012-01-01',
@@ -160,7 +160,7 @@ export const projects: Project[] = [
     title: 'Interpreter Administration System (DOPO)',
     customer: {
       name: 'Swiss Federal Office of Migration FOM',
-      url: 'https://www.bfm.admin.ch/bfm/en/home.html',
+      url: 'https://www.bfm.admin.ch',
     },
     period: {
       from: '2013-01-01',
@@ -240,7 +240,7 @@ export const projects: Project[] = [
     title: 'Platform for Mobile Location-based Advertising',
     customer: {
       name: 'Tieto International',
-      url: 'http://www.tieto.com/',
+      url: 'https://www.tietoevry.com/',
     },
     period: {
       from: '2008-01-01',
@@ -315,7 +315,7 @@ export const projects: Project[] = [
     title: 'True Type Font Converter',
     customer: {
       name: 'DHI-WASY GmbH ',
-      url: 'http://www.wasy.de/',
+      url: 'https://worldwide.dhigroup.com',
     },
     period: {
       from: '2006-01-01',
@@ -329,7 +329,7 @@ export const projects: Project[] = [
     title: 'Application for Geological Map Generation and Data Export',
     customer: {
       name: 'Thuringia State Authority for Environment and Geology (TLUG)',
-      url: 'http://www.tlug-jena.de/',
+      url: 'https://tlubn.thueringen.de',
     },
     period: {
       from: '2006-01-01',

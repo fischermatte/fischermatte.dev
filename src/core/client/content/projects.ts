@@ -145,8 +145,8 @@ export const projects: Project[] = [
   {
     title: 'Country of Origin Information System',
     customer: {
-      name: 'Swiss Federal Office of Migration FOM',
-      url: 'https://www.bfm.admin.ch',
+      name: 'State Secretariat for Migration SEM',
+      url: 'https://www.sem.admin.ch',
     },
     period: {
       from: '2012-01-01',
@@ -159,8 +159,8 @@ export const projects: Project[] = [
   {
     title: 'Interpreter Administration System (DOPO)',
     customer: {
-      name: 'Swiss Federal Office of Migration FOM',
-      url: 'https://www.bfm.admin.ch',
+      name: 'State Secretariat for Migration SEM',
+      url: 'https://www.sem.admin.ch',
     },
     period: {
       from: '2013-01-01',

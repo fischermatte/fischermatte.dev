@@ -34,8 +34,8 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
             <Link href="/">
               <a className="py-3 px-5 text-accent-dark">
                 <div className="flex flex-col">
-                  <div className="text-lg mr-3">fischermatte</div>
-                  <div className="text-xs self-end">engineering</div>
+                  <div className="text-lg">fischermatte</div>
+                  <div className="text-xs ml-6 self-end">cloud software engineer</div>
                 </div>
               </a>
             </Link>

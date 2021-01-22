@@ -57,7 +57,7 @@ const Home: React.FC<Props> = () => {
       </div>
       <h1 className="mt-12">Moin moin!</h1>
       <div>
-        My name is fischermatte, I am a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
+        Hello, I am Fischermatte - a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
         <span className="text-accent-normal">Serverless</span> and{' '}
         <span className="text-accent-normal">Cloud native web development</span>. The next paragraph is all about
         tech-lorem-ipsum since nobody cares about what is written on this website. If you really would like to read

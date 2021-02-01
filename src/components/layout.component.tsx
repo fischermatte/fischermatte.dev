@@ -23,6 +23,23 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="keywords" content={head[page]?.keywords} />
         <meta name="description" content={head[page]?.description} />
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://fischermatte.dev" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:title" content={head[page]?.title} />
+        <meta prefix="og: http://ogp.me/ns#" property="og:description" content={head[page]?.description} />
+        <meta
+          prefix="og: http://ogp.me/ns#"
+          name="image"
+          property="og:image"
+          content="https://fischermatte.dev/logo.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="fischermatte.dev" />
+        <meta property="twitter:url" content="https://fischermatte.dev" />
+        <meta name="twitter:image" content="https://fischermatte.dev/logo.png" />
+        <meta name="twitter:title" content={head[page]?.title} />
+        <meta name="twitter:description" content={head[page]?.description} />
+
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192" />
         <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" />

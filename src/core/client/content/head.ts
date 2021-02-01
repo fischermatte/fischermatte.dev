@@ -1,7 +1,8 @@
 export const head = {
   index: {
     title: 'Fischermatte | Cloud Software Engineer',
-    description: 'I am a Software Engineer located in Bern, Switzerland.',
+    description:
+      'I am a Software Engineer located in Bern, Switzerland. Currently focusing on Serverless and Cloud native web development.',
     keywords: 'Fischermatte',
   },
   resume: {

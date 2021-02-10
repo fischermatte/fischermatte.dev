@@ -10,6 +10,7 @@ export const projects: Project[] = [
     },
     period: {
       from: '2020-12-01',
+      to: '2021-02-01'
     },
     tags: ['GoogleCloud', 'Firebase', 'Angular', 'Serverless', 'Node.js', 'NoSQL', 'TailwindCSS'],
   },

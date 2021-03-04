@@ -7,7 +7,9 @@ class PhraseRepository {
   constructor(private faunaClient: faunadb.Client) {}
 
   async getById(id: string): Promise<Phrase> {
+    console.info('requesting data from fauna db...')
     const result: {data: Phrase} = await this.faunaClient.query(q.Get(q.Ref(q.Collection('phrases'), id)))
+    console.info(`received faunadb response ${JSON.stringify(result)}`)
     return result.data
   }
 

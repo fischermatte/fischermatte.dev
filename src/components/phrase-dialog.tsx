@@ -4,7 +4,7 @@ import {faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 import {ajax} from 'rxjs/ajax'
 import {Phrase} from '../core/shared/phrase.types'
 import {Observable} from 'rxjs'
-import {map, take} from 'rxjs/operators'
+import {map, take, timeout} from 'rxjs/operators'
 
 interface Props {
   phraseId: string
@@ -13,10 +13,11 @@ interface Props {
 
 const api = {
   getPhraseById(phraseId: string): Observable<Phrase> {
-    return ajax.getJSON<Phrase>(`api/phrases/${phraseId}`).pipe(take(1))
+    return ajax.getJSON<Phrase>(`api/phrases/${phraseId}`).pipe(timeout(5000), take(1))
   },
   likePhrase(phraseId: string): Observable<number> {
     return ajax.post(`api/phrases/${phraseId}/like`).pipe(
+      timeout(5000),
       take(1),
       map(resp => resp.response.totalLikes),
     )
@@ -28,10 +29,15 @@ const PhraseDialog: React.FC<Props> = props => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const subscription = api.getPhraseById(props.phraseId).subscribe((phrase: Phrase) => {
-      setPhrase(phrase)
-      setLoading(false)
-    })
+    const subscription = api.getPhraseById(props.phraseId).subscribe(
+      (phrase: Phrase) => {
+        setPhrase(phrase)
+        setLoading(false)
+      },
+      () => {
+        setLoading(false)
+      },
+    )
     return () => subscription.unsubscribe()
   }, [props.phraseId])
 

@@ -85,6 +85,11 @@ export const resume: Resume = {
   ],
   certificates: [
     {
+      name: 'Azure Developer Associate (AZ-204)',
+      time: '2021-03-04',
+      url: 'https://docs.microsoft.com/en-us/learn/certifications/exams/az-204',
+    },
+    {
       name: 'Certified Professional for Software Architecture (CPSA-F)',
       time: '2020-03-05',
       url: 'https://www.isaqb.org/certifications/foundation-level/',

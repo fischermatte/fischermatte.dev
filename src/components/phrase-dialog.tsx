@@ -13,11 +13,11 @@ interface Props {
 
 const api = {
   getPhraseById(phraseId: string): Observable<Phrase> {
-    return ajax.getJSON<Phrase>(`api/phrases/${phraseId}`).pipe(timeout(5000), take(1))
+    return ajax.getJSON<Phrase>(`api/phrases/${phraseId}`).pipe(timeout(1), take(1))
   },
   likePhrase(phraseId: string): Observable<number> {
     return ajax.post(`api/phrases/${phraseId}/like`).pipe(
-      timeout(5000),
+      timeout(1),
       take(1),
       map(resp => resp.response.totalLikes),
     )
@@ -27,15 +27,18 @@ const api = {
 const PhraseDialog: React.FC<Props> = props => {
   const [phrase, setPhrase] = useState<Phrase>(undefined)
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     const subscription = api.getPhraseById(props.phraseId).subscribe(
       (phrase: Phrase) => {
         setPhrase(phrase)
         setLoading(false)
+        setError(false)
       },
       () => {
         setLoading(false)
+        setError(true)
       },
     )
     return () => subscription.unsubscribe()
@@ -54,7 +57,7 @@ const PhraseDialog: React.FC<Props> = props => {
     <div className="fixed inset-0 z-50 overflow-auto bg-gray-800 bg-opacity-90 flex text-accent-dark">
       <div className="relative p-6 bg-accent-normal w-full max-w-2xl m-auto flex-col flex">
         {loading && <div className="py-2">Loading...</div>}
-        {!loading && (
+        {!loading && !error && (
           <div>
             <div className="font-bold py-2 text-lg">{phrase.title}</div>
             <div className="mb-2">
@@ -78,6 +81,9 @@ const PhraseDialog: React.FC<Props> = props => {
               </div>
             </div>
           </div>
+        )}
+        {!loading && error && (
+            <div>Failed loading data </div>
         )}
         <div className="text-center py-2 select-none">
           <button

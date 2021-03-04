@@ -25,6 +25,10 @@ class PhraseRepository {
   }
 }
 
+if (!process.env.FAUNA_SERVER_KEY) {
+  console.error('missing FAUNA_SERVER_KEY')
+}
+
 export const phraseRepository = new PhraseRepository(
   new faunadb.Client({
     secret: process.env.FAUNA_SERVER_KEY,

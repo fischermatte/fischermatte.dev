@@ -1,6 +1,6 @@
 import {Period} from '../shared/common.types'
 
-function parseYear(date: string): string | undefined {
+function parseYear(date?: string): string | undefined {
   if (!date) {
     return undefined
   }
@@ -11,7 +11,7 @@ function parseYear(date: string): string | undefined {
   return year.toString()
 }
 
-export const periodText = (period?: Period): string => {
+export const periodText = (period?: Period): string | undefined => {
   const from = parseYear(period?.from)
   const to = period?.to ? parseYear(period?.to) : undefined
   let result

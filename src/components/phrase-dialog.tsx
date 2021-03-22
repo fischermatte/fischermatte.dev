@@ -25,7 +25,7 @@ const api = {
 }
 
 const PhraseDialog: React.FC<Props> = props => {
-  const [phrase, setPhrase] = useState<Phrase>(undefined)
+  const [phrase, setPhrase] = useState<Phrase>({} as any)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
 
@@ -82,9 +82,7 @@ const PhraseDialog: React.FC<Props> = props => {
             </div>
           </div>
         )}
-        {!loading && error && (
-            <div>Failed loading data </div>
-        )}
+        {!loading && error && <div>Failed loading data </div>}
         <div className="text-center py-2 select-none">
           <button
             className="text-accent-normal bg-accent-dark py-2 px-4 hover:bg-accent-contrast"

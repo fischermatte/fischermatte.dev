@@ -6,5 +6,5 @@ test('periodText', () => {
       from: '2008-01-01',
       to: '2009-01-01',
     }),
-  ).toMatchInlineSnapshot()
+  ).toMatchInlineSnapshot(`"2008 - 2009"`)
 })

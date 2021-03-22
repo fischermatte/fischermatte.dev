@@ -9,6 +9,7 @@
     "prebuild": "npm run generate:sitemap",
     "build": "next build",
     "start": "next start -p 3001",
+    "test": "jest",
     "format": "prettier --write .",
     "generate:sitemap": "ts-node --project _scripts/tsconfig.json _scripts/generate-sitemap.ts"
   },
@@ -27,6 +28,9 @@
     "typewriter-effect": "^2.17.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@types/jest": "^26.0.21",
     "@types/node": "^14.14.35",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
@@ -42,11 +46,13 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "globby": "^11.0.3",
     "husky": "^5.2.0",
+    "jest": "^26.6.3",
     "postcss": "^8.2.8",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "request": "^2.88.2",
     "tailwindcss": "^2.0.4",
+    "ts-jest": "^26.5.4",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   },

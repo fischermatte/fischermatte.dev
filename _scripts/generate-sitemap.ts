@@ -31,12 +31,14 @@ function toUrlElement(page: string): string {
   }
   const route = path === '/index' ? '' : path
 
+  const priority = priorities[path] ?? '0.8'
+
   return `
   <url>
       <loc>${`https://fischermatte.dev${route}`}</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
       <changefreq>daily</changefreq>
-      <priority>${priorities[path] ?? '0.8'}</priority>
+      <priority>${priority}</priority>
   </url>`
 }
 

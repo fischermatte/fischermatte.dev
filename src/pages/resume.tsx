@@ -1,8 +1,8 @@
 import React from 'react'
 import {periodText} from '../core/client/period.utils'
-import {resume} from '../core/client/content/resume'
 import ResumeItemsComponent from '../components/resume-items.component'
 import LayoutComponent from '../components/layout.component'
+import {resume} from "../../content/resume";
 
 interface Props {}
 

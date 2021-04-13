@@ -1,4 +1,4 @@
-import {Resume} from '../../shared/resume.types'
+import {Resume} from '../src/core/shared/resume.types'
 
 export const resume: Resume = {
   jobs: [

@@ -6,8 +6,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import packageJson from '../../package.json'
 import {useRouter} from 'next/router'
-import {head} from '../core/client/content/head'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import {head} from '../../content/head'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}

@@ -16,7 +16,7 @@ const api = {
     return ajax.getJSON<Phrase>(`api/phrases/${phraseId}`).pipe(timeout(5000), take(1))
   },
   likePhrase(phraseId: string): Observable<number> {
-    return ajax.post(`api/phrases/${phraseId}/like`).pipe(
+    return ajax.post<Phrase>(`api/phrases/${phraseId}/increment-likes`).pipe(
       timeout(5000),
       take(1),
       map(resp => resp.response.totalLikes),

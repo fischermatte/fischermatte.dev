@@ -9,7 +9,6 @@ module.exports = {
       ...colors,
       primary: 'var(--color-primary)',
       accent: {
-        light: 'var(--color-accent-light)',
         normal: 'var(--color-accent-normal)',
         dark: 'var(--color-accent-dark)',
         contrast: 'var(--color-accent-contrast)',
@@ -19,7 +18,6 @@ module.exports = {
       ...theme('colors'),
       primary: 'var(--color-primary)',
       accent: {
-        light: 'var(--color-accent-light)',
         normal: 'var(--color-accent-normal)',
         dark: 'var(--color-accent-dark)',
         contrast: 'var(--color-accent-contrast)',

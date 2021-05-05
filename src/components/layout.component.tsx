@@ -12,9 +12,20 @@ import {head} from '../../content/head'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
 
+const themes = ['theme-dark', 'theme-red', 'theme-monochrome', 'theme-light']
+
 const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) => {
   const router = useRouter()
   const page = router.pathname === '/' ? 'index' : router.pathname.replace('/', '')
+
+  const switchTheme = () => {
+    const currentTheme = document.body.classList.values().next().value
+    document.body.classList.remove(...themes)
+    const availableThemes = themes.filter(t => t !== currentTheme)
+    const newTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)]
+    document.body.classList.add(newTheme)
+  }
+
   return (
     <div className="font-mono mx-auto max-w-screen-md">
       <Head>
@@ -72,6 +83,9 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           <Link href="/contact">
             <a className={router.pathname == '/contact' ? styles.navLinkActive : styles.navLink}>Contact</a>
           </Link>
+          <a onClick={switchTheme} className={styles.navLink}>
+            Theme
+          </a>
         </nav>
       </header>
       <main className="py-6">{props.children}</main>

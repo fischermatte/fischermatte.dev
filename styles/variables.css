@@ -1,7 +1,6 @@
 :root {
   --color-primary: #fff;
   --color-accent-normal: rgb(239, 239, 107);
-  --color-accent-light: rgb(255, 255, 255);
   --color-accent-dark: rgb(34, 33, 41);
   --color-accent-contrast: rgb(91, 91, 91);
 }
@@ -9,7 +8,20 @@
 .theme-red {
   --color-primary: #fff;
   --color-accent-normal: rgb(239, 149, 107);
-  --color-accent-light: rgb(255, 255, 255);
   --color-accent-dark: rgb(34, 33, 41);
+  --color-accent-contrast: rgb(91, 91, 91);
+}
+
+.theme-monochrome {
+  --color-primary: #fff;
+  --color-accent-normal: rgb(255, 255, 255);
+  --color-accent-dark: rgb(34, 33, 41);
+  --color-accent-contrast: rgb(91, 91, 91);
+}
+
+.theme-light {
+  --color-primary: #000000;
+  --color-accent-normal: rgb(0, 0, 0);
+  --color-accent-dark: rgb(255, 255, 255);
   --color-accent-contrast: rgb(91, 91, 91);
 }

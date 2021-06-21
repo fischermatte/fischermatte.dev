@@ -11,7 +11,7 @@ const Contact: React.FC<Props> = () => {
       <form name="contact" method="POST" data-netlify="true" className="mt-4">
         <div className="mt-4">
           <label className="block">
-            <input name="name" className="form-input mt-1 block w-full bg-gray-700" placeholder="Name" />
+            <input type="text" name="name" className="form-input mt-1 block w-full bg-gray-700" placeholder="Name" />
           </label>
         </div>
         <div className="mt-4">

@@ -25,7 +25,12 @@ const api = {
 }
 
 const PhraseDialog: React.FC<Props> = props => {
-  const [phrase, setPhrase] = useState<Phrase>({} as any)
+  const [phrase, setPhrase] = useState<Phrase>({
+    title: '',
+    totalLikes: 0,
+    id: '',
+    text: '',
+  })
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
 

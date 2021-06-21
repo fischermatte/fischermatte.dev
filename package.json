@@ -4,7 +4,7 @@
   "license": "WTFPL",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .ts,.tsx,.js",
+    "lint": "next lint",
     "dev": "next dev",
     "prebuild": "npm run generate:sitemap",
     "build": "next build",

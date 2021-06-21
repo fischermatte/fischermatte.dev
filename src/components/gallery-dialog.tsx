@@ -1,4 +1,5 @@
 import React, {BaseSyntheticEvent} from 'react'
+import Image from 'next/image'
 
 interface Image {
   title: string
@@ -25,8 +26,7 @@ const GalleryDialog: React.FC<Props> = props => {
             {props.images
               ?.filter((v, index) => index === 1)
               .map(image => (
-                // use Image once this is fixed: https://github.com/netlify/next-on-netlify/issues/70
-                <img key={image.url} src={image.url} alt={image.title} width="100%" />
+                <Image key={image.url} src={image.url} alt={image.title} width={500} height={500} />
               ))}
           </div>
         )}

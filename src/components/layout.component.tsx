@@ -9,7 +9,6 @@ import {useRouter} from 'next/router'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import {head} from '../../content/head'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
 
 const themes = ['theme-dark', 'theme-red', 'theme-monochrome', 'theme-light']
@@ -21,9 +20,11 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
   const switchTheme = () => {
     const currentTheme = document.body.classList.values().next().value
     document.body.classList.remove(...themes)
-    const availableThemes = themes.filter(t => t !== currentTheme)
-    const newTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)]
-    document.body.classList.add(newTheme)
+    let nextThemeIndex = themes.indexOf(currentTheme) + 1
+    if (nextThemeIndex >= themes.length) {
+      nextThemeIndex = 0
+    }
+    document.body.classList.add(themes[nextThemeIndex])
   }
 
   return (

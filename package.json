@@ -1,9 +1,10 @@
 {
   "name": "fischermatte.dev",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "license": "WTFPL",
   "private": true,
   "scripts": {
+    "postinstall": "git config core.hooksPath ./.git-hooks",
     "lint": "next lint",
     "dev": "next dev",
     "prebuild": "npm run generate:sitemap",
@@ -11,6 +12,7 @@
     "start": "next start -p 3001",
     "test": "jest",
     "format": "prettier --write .",
+    "ci": "npm run lint && npm run test && npm run build",
     "generate:sitemap": "ts-node --project _scripts/tsconfig.json _scripts/generate-sitemap.ts"
   },
   "dependencies": {
@@ -20,7 +22,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@tailwindcss/forms": "^0.3.3",
     "faunadb": "4.3.0",
-    "next": "^11.0.0",
+    "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.9.0",
@@ -29,34 +31,37 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
+    "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.23",
-    "@types/node": "^15.12.4",
+    "@types/node": "^15.12.5",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.27.0",
-    "@typescript-eslint/parser": "^4.27.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "autoprefixer": "^10.2.6",
     "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-json": "^3.0.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "globby": "^11.0.4",
-    "husky": "^6.0.0",
-    "jest": "^27.0.4",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.0",
     "postcss": "^8.3.5",
-    "prettier": "^2.3.1",
-    "pretty-quick": "^3.1.1",
+    "prettier": "^2.3.2",
     "request": "^2.88.2",
-    "tailwindcss": "^2.2.2",
+    "tailwindcss": "^2.2.4",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run lint"
-    }
+  "lint-staged": {
+    "*.+(js|ts|tsx|yml|json)": [
+      "eslint --cache --fix"
+    ],
+    "*.+(js|ts|html|css|json)": [
+      "prettier --write"
+    ]
   }
 }

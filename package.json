@@ -47,21 +47,19 @@
     "eslint-plugin-prettier": "^3.4.0",
     "globby": "^11.0.4",
     "jest": "^27.0.6",
-    "lint-staged": "^11.0.0",
+    "husky": "^6.0.0",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
     "request": "^2.88.2",
     "tailwindcss": "^2.2.4",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   },
-  "lint-staged": {
-    "*.+(js|ts|tsx|yml|json)": [
-      "eslint --cache --fix"
-    ],
-    "*.+(js|ts|html|css|json)": [
-      "prettier --write"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
   }
 }

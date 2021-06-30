@@ -6,10 +6,10 @@ interface Image {
   url: string
 }
 
-interface Props{
+interface Props {
   images: Image[]
   onClose: (e: BaseSyntheticEvent) => void
-};
+}
 
 const GalleryDialog: React.FC<Props> = props => {
   return (

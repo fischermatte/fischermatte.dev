@@ -71,7 +71,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           </div>
           <div className={`flex-grow  ${styles.fill} `}>{}</div>
         </div>
-        <nav className="mt-4 text-primary flex space-x-4">
+        <nav className="mt-4 text-primary flex space-x-4 relative">
           <Link href="/">
             <a className={router.pathname == '/' ? styles.navLinkActive : styles.navLink}>Home</a>
           </Link>
@@ -84,7 +84,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           <Link href="/contact">
             <a className={router.pathname == '/contact' ? styles.navLinkActive : styles.navLink}>Contact</a>
           </Link>
-          <a onClick={switchTheme} className={styles.navLink}>
+          <a onClick={switchTheme} className={styles.themeLink}>
             Theme
           </a>
         </nav>

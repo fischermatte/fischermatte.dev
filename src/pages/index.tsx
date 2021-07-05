@@ -55,7 +55,7 @@ const Home: React.FC<Props> = () => {
           }}
         />
       </div>
-      <h1 className="mt-12 mb-8">Moin moin!</h1>
+      <h1 className="mt-12 mb-6">Moin moin!</h1>
       <div>
         Hello, I am Fischermatte - a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
         <span className="text-accent-normal">Serverless</span> and{' '}

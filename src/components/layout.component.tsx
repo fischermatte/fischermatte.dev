@@ -28,7 +28,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
   }
 
   return (
-    <div className="font-mono mx-auto max-w-screen-md">
+    <div className="font-mono mx-auto max-w-screen-md px-4 min-w-[360px]">
       <Head>
         <title>{head[page]?.title}</title>
         <meta charSet="utf-8" />

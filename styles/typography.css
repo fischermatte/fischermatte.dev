@@ -24,15 +24,15 @@
     -webkit-font-smoothing: antialiased !important;
   }
   h1 {
-    @apply text-xl mb-8 text-accent-normal;
+    @apply text-lg mb-8 text-accent-normal;
   }
   h2 {
-    @apply text-lg mb-3 text-accent-normal;
+    @apply text-base mb-3 text-accent-normal;
   }
 
   h2,
   h2:after {
-    @apply block text-lg border-b-3 border-dotted border-accent-normal pb-1;
+    @apply block text-base border-b-3 border-dotted border-accent-normal pb-1;
     content: '';
   }
 }

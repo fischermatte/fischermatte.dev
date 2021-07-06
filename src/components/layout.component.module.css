@@ -10,8 +10,7 @@
 }
 
 .navLink,
-.navLinkActive,
-.themeLink {
+.navLinkActive {
   @apply text-primary cursor-pointer underline;
   text-underline-position: under;
 }
@@ -20,11 +19,11 @@
   @apply text-accent-normal;
 }
 
+.themeLink {
+  @apply text-primary cursor-pointer absolute right-0;
+}
+
 .navLink:hover,
 .themeLink:hover {
   @apply text-accent-normal;
-}
-
-.themeLink {
-  @apply absolute right-0;
 }

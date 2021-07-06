@@ -4,6 +4,7 @@ import Link from 'next/link'
 import styles from './layout.component.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {faPalette} from '@fortawesome/free-solid-svg-icons'
 import packageJson from '../../package.json'
 import {useRouter} from 'next/router'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -71,7 +72,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           </div>
           <div className={`flex-grow  ${styles.fill} `}>{}</div>
         </div>
-        <nav className="mt-4 text-primary flex space-x-4 relative">
+        <nav className="mt-4 text-primary flex flex-wrap space-x-4 relative">
           <Link href="/">
             <a className={router.pathname == '/' ? styles.navLinkActive : styles.navLink}>Home</a>
           </Link>
@@ -85,7 +86,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
             <a className={router.pathname == '/contact' ? styles.navLinkActive : styles.navLink}>Contact</a>
           </Link>
           <a onClick={switchTheme} className={styles.themeLink}>
-            Theme
+            <FontAwesomeIcon className="link" icon={faPalette} />
           </a>
         </nav>
       </header>

@@ -30,10 +30,8 @@
     @apply text-base mb-3 text-accent-normal;
   }
 
-  h2,
-  h2:after {
-    @apply block text-base border-b-3 border-dotted border-accent-normal pb-1;
-    content: '';
+  h2 {
+    @apply block text-base border-b-3 border-double border-accent-normal pb-2;
   }
 }
 

@@ -38,7 +38,7 @@ const ProjectComponent: React.FC<Props> = props => {
       </h2>
       <div>
         {project.customer && (
-          <div className="text-base opacity-90 mb-3">
+          <div className="text-base opacity-90 mb-3 mt-3">
             {period}
             {' | '}
             <a className="link" href={project.customer.url} target="_blank" rel="noreferrer">

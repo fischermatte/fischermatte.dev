@@ -1,3 +1,5 @@
+@import 'tailwindcss/base';
+
 @font-face {
   font-family: Fira Code;
   font-style: normal;
@@ -14,35 +16,25 @@
   font-display: swap;
 }
 
-body {
-  @apply font-mono text-base text-primary bg-accent-dark tracking-tight mx-6 antialiased subpixel-antialiased;
-  /* optimize for prettier fonts rather than faster rendering times */
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-}
+@layer base {
+  body {
+    @apply font-mono text-base text-primary bg-accent-dark tracking-tight mx-6 antialiased subpixel-antialiased;
+    /* optimize for prettier fonts rather than faster rendering times */
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+  h1 {
+    @apply text-xl mb-8 text-accent-normal;
+  }
+  h2 {
+    @apply text-lg mb-3 text-accent-normal;
+  }
 
-h1 {
-  @apply font-bold text-2xl mb-8 text-accent-normal;
-}
-h2 {
-  @apply mb-3 text-accent-normal;
-}
-
-h2,
-h2:after {
-  @apply text-xl border-b-3 border-dotted border-accent-normal pb-1;
-}
-
-h3 {
-  @apply text-lg mb-1;
-}
-h4 {
-  @apply text-base;
-}
-
-h2:after {
-  content: '';
-  @apply block;
+  h2,
+  h2:after {
+    @apply block text-lg border-b-3 border-dotted border-accent-normal pb-1;
+    content: '';
+  }
 }
 
 .link {

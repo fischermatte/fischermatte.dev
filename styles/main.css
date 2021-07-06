@@ -1,11 +1,8 @@
 @import 'variables.css';
 
 /* purgecss start ignore */
-@import 'tailwindcss/base';
+@import 'typography.css';
 @import 'tailwindcss/components';
 /* purgecss end ignore */
-
-/* internal classes */
-@import 'typography.css';
 
 @import 'tailwindcss/utilities';

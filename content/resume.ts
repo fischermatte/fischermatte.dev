@@ -3,12 +3,21 @@ import {Resume} from '../src/core/shared/resume.types'
 export const resume: Resume = {
   jobs: [
     {
+      employer: 'Federal Office of Information Technology, Systems and Telecommunication FOITT',
+      location: 'Zollikofen, Switzerland',
+      url: 'https://www.bit.admin.ch',
+      period: {
+        from: '2021-09-15',
+        to: '???',
+      },
+    },
+    {
       employer: 'die Mobiliar',
       location: 'Bern, Switzerland',
       url: 'https://www.mobiliar.ch',
       period: {
         from: '2018-03-01',
-        to: 'Present',
+        to: '2021-07-31',
       },
     },
     {

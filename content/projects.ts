@@ -2,6 +2,19 @@ import {Project} from '../src/core/shared/project.types'
 
 export const projects: Project[] = [
   {
+    title: 'Foundera',
+    url: 'https://foundera.ch/',
+    customer: {
+      name: 'die Mobiliar / Raiffeisen Schweiz',
+      url: 'https://www.mobiliar.ch',
+    },
+    period: {
+      from: '2021-03-01',
+      to: '2021-07-01',
+    },
+    tags: ['TailwindCSS', 'Node.js', 'PHP', 'Wordpress', 'Twig'],
+  },
+  {
     title: 'CarCheck',
     url: 'https://www.checkyourcar.ch',
     customer: {

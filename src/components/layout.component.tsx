@@ -29,7 +29,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
   }
 
   return (
-    <div className="font-mono mx-auto max-w-screen-md px-4 min-w-[360px]">
+    <div className="font-mono mx-auto max-w-screen-md min-w-[360px] px-4 py-6">
       <Head>
         <title>{head[page]?.title}</title>
         <meta charSet="utf-8" />
@@ -58,7 +58,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
         <link rel="icon" type="image/png" href="favicon-512x512.png" sizes="512x512" />
         <link rel="apple-touch-icon" href="favicon-apple-touch.png" sizes="180x180" />
       </Head>
-      <header className="py-6">
+      <header>
         <div className="flex">
           <div className="flex bg-accent-normal">
             <Link href="/">

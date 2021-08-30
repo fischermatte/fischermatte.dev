@@ -1,11 +1,18 @@
-import globby from 'globby'
-import * as fs from 'fs'
+async function globby(args) {
+  const globby = await import('globby')
+  return await globby.globby(args)
+}
+
+async function writeFileSync(file, data) {
+  const fs = await import('fs')
+  return fs.writeFileSync(file, data)
+}
 
 const priorities = {
   '/index': '1.0',
 }
 
-async function generateSiteMap(): Promise<void> {
+async function generateSiteMap() {
   const pages = await globby(['src/pages/**/*.tsx'])
 
   const sitemap = `<?xml version='1.0' encoding='UTF-8'?>
@@ -20,11 +27,10 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     })
     .join('')}
 </urlset>`
-
-  fs.writeFileSync('public/sitemap.xml', sitemap)
+  await writeFileSync('public/sitemap.xml', sitemap)
 }
 
-function toUrlElement(page: string): string {
+function toUrlElement(page) {
   const path = page.replace('src/pages', '').replace('.tsx', '')
   if (path.indexOf('/_') >= 0) {
     return ''

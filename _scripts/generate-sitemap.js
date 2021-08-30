@@ -37,7 +37,7 @@ function toUrlElement(page) {
   }
   const route = path === '/index' ? '' : path
 
-  const priority = priorities[path] ?? '0.8'
+  const priority = priorities[path] ? priorities[path] : '0.8'
 
   return `
   <url>

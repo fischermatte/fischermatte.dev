@@ -8,7 +8,7 @@ export const resume: Resume = {
       url: 'https://www.bit.admin.ch',
       period: {
         from: '2021-09-15',
-        to: '???',
+        to: '',
       },
     },
     {

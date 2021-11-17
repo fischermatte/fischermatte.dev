@@ -2,6 +2,17 @@ import {Project} from '../src/core/shared/project.types'
 
 export const projects: Project[] = [
   {
+    title: 'VTKG',
+    customer: {
+      name: 'Federal Department of Defence, Civil Protection and Sport (DDPS)',
+      url: 'https://www.vbs.admin.ch',
+    },
+    period: {
+      from: '2021-09-20',
+    },
+    tags: ['Angular', 'TailwindCSS', 'Node.js', 'Java', 'Spring Boot', 'OpenAPI', 'PostgreSQL'],
+  },
+  {
     title: 'Foundera',
     url: 'https://foundera.ch/',
     customer: {

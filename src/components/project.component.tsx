@@ -49,10 +49,7 @@ const ProjectComponent: React.FC<Props> = props => {
         {project.tags && (
           <div className="text-sm opacity-60">
             {project.tags?.map(tag => (
-              <span key={tag}>
-                {'#'}
-                {tag}{' '}
-              </span>
+              <span key={tag}>{tag} </span>
             ))}
           </div>
         )}

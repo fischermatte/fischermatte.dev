@@ -109,7 +109,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
             <FontAwesomeIcon className="link" icon={faGitlab} />
           </a>
         </div>
-        <div className="text-sm">© fischermatte 2021</div>
+        <div className="text-sm">© fischermatte 2022</div>
         <div className="text-xs mt-2  opacity-60">
           <a
             href="https://github.com/fischermatte/fischermatte-next"

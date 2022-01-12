@@ -1,6 +1,6 @@
 [![TypeScript](https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/nextjs-135279.svg?&style=for-the-badge&logo=next.js&logoColor=white)](https://github.com/vercel/next.js/)
-[![TailwindCSS](https://img.shields.io/badge/tailwindcss%20-%2338B2AC.svg?&style=for-the-badge&logo=tailwind-css&logoColor=white)](https://github.com/tailwindlabs/tailwindcss)
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss%20-%2338B2AC.svg?&style=for-the-badge&logo=tailwind-css&logoColor=38bdf8&color=000000)](https://github.com/tailwindlabs/tailwindcss)
 [![Prettier](https://img.shields.io/badge/prettier-1a2b34.svg?&style=for-the-badge&logo=prettier&logoColor=white)](https://github.com/prettier/prettier)
 [![React](https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://github.com/facebook/react)
 [![Supabase](https://img.shields.io/badge/supabase%20-%2320232a.svg?&style=for-the-badge&logo=supabase&logoColor=%10b981)](https://github.com/supabase/supabase)

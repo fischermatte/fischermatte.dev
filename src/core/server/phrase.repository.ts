@@ -3,7 +3,7 @@ import {createClient} from '@supabase/supabase-js'
 import SupabaseClient from '@supabase/supabase-js/dist/main/SupabaseClient'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 class PhraseRepository {
   constructor(private db: SupabaseClient) {}
@@ -26,4 +26,4 @@ class PhraseRepository {
   }
 }
 
-export const phraseRepository = new PhraseRepository(createClient(supabaseUrl, supabaseAnonKey))
+export const phraseRepository = new PhraseRepository(createClient(supabaseUrl, supabaseKey))

@@ -35,27 +35,29 @@ const PhraseDialog: React.FC<Props> = props => {
   const [error, setError] = useState(false)
 
   useEffect(() => {
-    const subscription = api.getPhraseById(props.phraseId).subscribe(
-      (phrase: Phrase) => {
+    const subscription = api.getPhraseById(props.phraseId).subscribe({
+      next: (phrase: Phrase) => {
         setPhrase(phrase)
         setLoading(false)
         setError(false)
       },
-      () => {
+      error: () => {
         setLoading(false)
         setError(true)
       },
-    )
+    })
     return () => subscription.unsubscribe()
   }, [props.phraseId])
 
   function onLike(event: BaseSyntheticEvent): void {
     event.stopPropagation()
-    api.likePhrase(props.phraseId).subscribe(totalLikes => {
-      setPhrase({
-        ...phrase,
-        totalLikes,
-      })
+    api.likePhrase(props.phraseId).subscribe({
+      next: totalLikes => {
+        setPhrase({
+          ...phrase,
+          totalLikes,
+        })
+      },
     })
   }
   return (

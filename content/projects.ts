@@ -2,6 +2,18 @@ import {Project} from '../src/core/shared/project.types'
 
 export const projects: Project[] = [
   {
+    title: 'Sphair.ch',
+    url: 'https://www.sphair.ch/',
+    customer: {
+      name: 'Federal Department of Defence, Civil Protection and Sport (DDPS)',
+      url: 'https://www.vbs.admin.ch',
+    },
+    period: {
+      from: '2022-04-01',
+    },
+    tags: ['Angular', 'TailwindCSS', 'Node.js', 'Java', 'Spring Boot', 'OpenAPI', 'PostgreSQL'],
+  },
+  {
     title: 'VTKG',
     customer: {
       name: 'Federal Department of Defence, Civil Protection and Sport (DDPS)',
@@ -9,6 +21,7 @@ export const projects: Project[] = [
     },
     period: {
       from: '2021-09-20',
+      to: '2022-12-31',
     },
     tags: ['Angular', 'TailwindCSS', 'Node.js', 'Java', 'Spring Boot', 'OpenAPI', 'PostgreSQL'],
   },

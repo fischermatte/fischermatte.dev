@@ -15,7 +15,7 @@ Personal website based on the following technologies
 - Typescript
 - Next.js
 - Tailwind CSS
-- Supabase
+- FaunaDB (or optional Supabase)
 
 ## Getting started
 

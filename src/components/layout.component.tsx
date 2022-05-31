@@ -12,7 +12,7 @@ import {head} from '../../content/head'
 
 interface Props {}
 
-const themes = ['theme-dark', 'theme-red', 'theme-monochrome', 'theme-light']
+const themes = ['theme-dark', 'theme-red', 'theme-monochrome']
 
 const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) => {
   const router = useRouter()

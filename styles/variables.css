@@ -18,10 +18,3 @@
   --color-accent-dark: rgb(34, 33, 41);
   --color-accent-contrast: rgb(91, 91, 91);
 }
-
-.theme-light {
-  --color-primary: #000000;
-  --color-accent-normal: rgb(0, 0, 0);
-  --color-accent-dark: rgb(255, 255, 255);
-  --color-accent-contrast: rgb(91, 91, 91);
-}

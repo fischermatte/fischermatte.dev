@@ -11,17 +11,31 @@ const Contact: React.FC<Props> = () => {
       <form name="contact" method="POST" data-netlify="true" className="mt-4">
         <div className="mt-4">
           <label className="block">
-            <input type="text" name="name" className="form-input mt-1 block w-full bg-gray-700" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              className="form-input mt-1 block w-full focus:border-accent-normal text-accent-dark"
+              placeholder="Name"
+            />
           </label>
         </div>
         <div className="mt-4">
           <label className="block">
-            <input type="email" name="email" className="form-input mt-1 block w-full bg-gray-700" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              className="form-input mt-1 block w-full focus:border-accent-normal  text-accent-dark"
+              placeholder="Email"
+            />
           </label>
         </div>
         <div className="mt-4">
           <label className="block">
-            <textarea name="message" className="form-textarea mt-1 block w-full bg-gray-700" placeholder="Message" />
+            <textarea
+              name="message"
+              className="form-textarea mt-1 block w-full focus:border-accent-normal  text-accent-dark"
+              placeholder="Message"
+            />
           </label>
         </div>
         <div className="mt-4 text-center">

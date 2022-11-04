@@ -61,29 +61,27 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
       <header>
         <div className="flex">
           <div className="flex bg-accent-normal">
-            <Link href="/">
-              <a className="py-3 px-5 text-accent-dark">
-                <div className="flex flex-col lowercase">
-                  <div className="text-lg">Fischermatte</div>
-                  <div className="text-xs ml-6 self-end">Cloud Software Engineer</div>
-                </div>
-              </a>
+            <Link href="/" className="py-3 px-5 text-accent-dark">
+              <div className="flex flex-col lowercase">
+                <div className="text-lg">Fischermatte</div>
+                <div className="text-xs ml-6 self-end">Cloud Software Engineer</div>
+              </div>
             </Link>
           </div>
           <div className={`flex-grow  ${styles.fill} `}>{}</div>
         </div>
         <nav className="mt-4 text-primary flex flex-wrap space-x-4 relative">
-          <Link href="/">
-            <a className={router.pathname == '/' ? styles.navLinkActive : styles.navLink}>Home</a>
+          <Link href="/" className={router.pathname == '/' ? styles.navLinkActive : styles.navLink}>
+            Home
           </Link>
-          <Link href="/resume">
-            <a className={router.pathname == '/resume' ? styles.navLinkActive : styles.navLink}>Resume</a>
+          <Link href="/resume" className={router.pathname == '/resume' ? styles.navLinkActive : styles.navLink}>
+            Resume
           </Link>
-          <Link href="/projects">
-            <a className={router.pathname == '/projects' ? styles.navLinkActive : styles.navLink}>Projects</a>
+          <Link href="/projects" className={router.pathname == '/projects' ? styles.navLinkActive : styles.navLink}>
+            Projects
           </Link>
-          <Link href="/contact">
-            <a className={router.pathname == '/contact' ? styles.navLinkActive : styles.navLink}>Contact</a>
+          <Link href="/contact" className={router.pathname == '/contact' ? styles.navLinkActive : styles.navLink}>
+            Contact
           </Link>
           <a onClick={switchTheme} className={styles.themeLink}>
             <FontAwesomeIcon className="link" icon={faPalette} />

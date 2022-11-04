@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from './layout.component.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faGithub, faGitlab, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faGitlab, faMastodon, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faPalette} from '@fortawesome/free-solid-svg-icons'
 import packageJson from '../../package.json'
 import {useRouter} from 'next/router'
@@ -93,6 +93,9 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
       <main className="py-6">{props.children}</main>
       <footer className="py-6 text-center">
         <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
+          <a href="https://mastodon.social/@fischermatte" title="fischermatte on Mastodon">
+            <FontAwesomeIcon className="link" icon={faMastodon} />
+          </a>
           <a href="https://twitter.com/fischermatte" title="fischermatte on Twitter">
             <FontAwesomeIcon className="link" icon={faTwitter} />
           </a>

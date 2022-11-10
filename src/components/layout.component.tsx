@@ -91,7 +91,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
       <main className="py-6">{props.children}</main>
       <footer className="py-6 text-center">
         <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
-          <a rel="me" href="https://mastodon.social/@fischermatte" title="fischermatte on Mastodon">
+          <a rel="me" href="https://swiss.social/@fischermatte" title="fischermatte on Mastodon">
             <FontAwesomeIcon className="link" icon={faMastodon} />
           </a>
           <a href="https://twitter.com/fischermatte" title="fischermatte on Twitter">

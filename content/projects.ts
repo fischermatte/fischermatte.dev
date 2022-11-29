@@ -3,7 +3,6 @@ import {Project} from '../src/core/shared/project.types'
 export const projects: Project[] = [
   {
     title: 'Sphair.ch',
-    url: 'https://www.sphair.ch/',
     customer: {
       name: 'Federal Department of Defence, Civil Protection and Sport (DDPS)',
       url: 'https://www.vbs.admin.ch',

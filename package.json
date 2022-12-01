@@ -30,6 +30,7 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.29.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/node": "^18.11.10",

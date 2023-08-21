@@ -47,11 +47,7 @@ const ProjectComponent: React.FC<Props> = props => {
           </div>
         )}
         {project.tags && (
-          <div className="text-sm opacity-60">
-            {project.tags?.map(tag => (
-              <span key={tag}>{tag} </span>
-            ))}
-          </div>
+          <div className="text-sm opacity-60">{project.tags?.map(tag => <span key={tag}>{tag} </span>)}</div>
         )}
         {project.images && (
           <div className="mt-2">

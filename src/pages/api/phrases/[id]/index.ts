@@ -1,7 +1,7 @@
 import {NextApiRequest, NextApiResponse} from 'next'
-import {Phrase} from '../../../../core/shared/phrase.types'
-import {phraseRepository} from '../../../../core/server/phrase.repository'
 import {ErrorResponseBody} from '../../../../core/server/error.types'
+import {phraseRepository} from '../../../../core/server/phrase.repository'
+import {Phrase} from '../../../../core/shared/phrase.types'
 
 export default async function getPhrase(
   req: NextApiRequest,

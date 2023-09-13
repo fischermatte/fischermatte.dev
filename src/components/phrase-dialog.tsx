@@ -1,10 +1,10 @@
-import React, {BaseSyntheticEvent, useEffect, useState} from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faThumbsUp} from '@fortawesome/free-solid-svg-icons'
-import {ajax} from 'rxjs/ajax'
-import {Phrase} from '../core/shared/phrase.types'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import React, {BaseSyntheticEvent, useEffect, useState} from 'react'
 import {Observable} from 'rxjs'
+import {ajax} from 'rxjs/ajax'
 import {map, take, timeout} from 'rxjs/operators'
+import {Phrase} from '../core/shared/phrase.types'
 
 interface Props {
   phraseId: string

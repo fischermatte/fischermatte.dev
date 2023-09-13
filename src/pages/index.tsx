@@ -1,6 +1,6 @@
-import LayoutComponent from '../components/layout.component'
 import dynamic from 'next/dynamic'
 import React, {BaseSyntheticEvent, useState} from 'react'
+import LayoutComponent from '../components/layout.component'
 
 const Typewriter = dynamic(() => import('typewriter-effect'), {
   ssr: false,

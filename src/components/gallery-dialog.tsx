@@ -1,5 +1,5 @@
-import React, {BaseSyntheticEvent} from 'react'
 import Image from 'next/image'
+import React, {BaseSyntheticEvent} from 'react'
 
 interface Image {
   title: string

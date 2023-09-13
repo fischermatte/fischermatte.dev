@@ -1,14 +1,14 @@
-import React, {PropsWithChildren} from 'react'
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from './layout.component.module.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import {faGithub, faGitlab, faMastodon, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faPalette} from '@fortawesome/free-solid-svg-icons'
-import packageJson from '../../package.json'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import Head from 'next/head'
+import Link from 'next/link'
 import {useRouter} from 'next/router'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import React, {PropsWithChildren} from 'react'
 import {head} from '../../content/head'
+import packageJson from '../../package.json'
+import styles from './layout.component.module.css'
 
 interface Props {}
 

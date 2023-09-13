@@ -1,7 +1,7 @@
 import React from 'react'
+import {projects} from '../../content/projects'
 import LayoutComponent from '../components/layout.component'
 import ProjectComponent from '../components/project.component'
-import {projects} from '../../content/projects'
 
 interface Props {}
 

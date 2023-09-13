@@ -1,5 +1,5 @@
-import {Phrase} from '../shared/phrase.types'
 import * as faunadb from 'faunadb'
+import {Phrase} from '../shared/phrase.types'
 
 const q = faunadb.query
 

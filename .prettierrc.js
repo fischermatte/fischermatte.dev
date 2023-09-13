@@ -1,5 +1,5 @@
-module.exports = {
-  $schema: 'http://json.schemastore.org/prettierrc',
+const config = {
+  plugins: ['prettier-plugin-organize-imports'],
   arrowParens: 'avoid',
   bracketSpacing: false,
   htmlWhitespaceSensitivity: 'css',
@@ -15,3 +15,4 @@ module.exports = {
   useTabs: false,
   endOfLine: 'auto',
 }
+export default config

@@ -3,6 +3,7 @@
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss%20-%2338B2AC.svg?&style=for-the-badge&logo=tailwind-css&logoColor=38bdf8&color=000000)](https://github.com/tailwindlabs/tailwindcss)
 [![Prettier](https://img.shields.io/badge/prettier-1a2b34.svg?&style=for-the-badge&logo=prettier&logoColor=white)](https://github.com/prettier/prettier)
 [![React](https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://github.com/facebook/react)
+
 [![WTFPL](https://img.shields.io/badge/license-WTFPL-green.svg)](http://www.wtfpl.net/txt/copying)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/60746c83-4fed-435e-8529-ccf46bef6bae/deploy-status)](https://app.netlify.com/sites/fischermatte/deploys)
 

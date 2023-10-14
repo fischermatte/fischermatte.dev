@@ -9,6 +9,7 @@ export const projects: Project[] = [
     },
     period: {
       from: '2022-04-01',
+      to: '2023-12-31',
     },
     tags: ['Angular', 'TailwindCSS', 'Node.js', 'Java', 'Spring Boot', 'OpenAPI', 'PostgreSQL'],
   },

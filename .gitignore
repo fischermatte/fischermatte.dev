@@ -38,3 +38,4 @@ yarn-error.log*
 # generated
 public/sitemap.xml
 /.eslintcache
+/.env

@@ -3,7 +3,6 @@
   "version": "1.5.3",
   "license": "WTFPL",
   "private": true,
-  "type": "module",
   "scripts": {
     "postinstall": "git config core.hooksPath ./.git-hooks",
     "lint": "next lint",

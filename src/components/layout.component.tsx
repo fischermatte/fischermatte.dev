@@ -94,9 +94,6 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           <a rel="me" href="https://swiss.social/@fischermatte" title="fischermatte on Mastodon">
             <FontAwesomeIcon className="link" icon={faMastodon} />
           </a>
-          <a href="https://twitter.com/fischermatte" title="fischermatte on Twitter">
-            <FontAwesomeIcon className="link" icon={faTwitter} />
-          </a>
           <a
             href="https://stackoverflow.com/users/524906/fischermatte?tab=profile"
             title="fischermatte on Stackoverflow"

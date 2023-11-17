@@ -1,5 +1,5 @@
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import {faGithub, faGitlab, faMastodon, faStackOverflow, faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faGitlab, faMastodon, faStackOverflow} from '@fortawesome/free-brands-svg-icons'
 import {faPalette} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Head from 'next/head'

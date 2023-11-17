@@ -4,3 +4,7 @@
 [build]
 command = "npm run build"
 publish = ".next"
+
+[build.environment]
+  # Environment variables are set here
+  NODE_VERSION = "20.9.0"

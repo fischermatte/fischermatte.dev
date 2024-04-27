@@ -5,7 +5,7 @@
 [![React](https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://github.com/facebook/react)
 
 [![WTFPL](https://img.shields.io/badge/license-WTFPL-green.svg)](http://www.wtfpl.net/txt/copying)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/60746c83-4fed-435e-8529-ccf46bef6bae/deploy-status)](https://app.netlify.com/sites/fischermatte/deploys)
+
 
 # fischermatte.dev
 

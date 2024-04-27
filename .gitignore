@@ -39,3 +39,6 @@ yarn-error.log*
 public/sitemap.xml
 /.eslintcache
 /.env
+
+# Local Netlify folder
+.netlify

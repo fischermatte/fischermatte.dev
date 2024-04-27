@@ -6,7 +6,6 @@
 
 [![WTFPL](https://img.shields.io/badge/license-WTFPL-green.svg)](https://de.wikipedia.org/wiki/WTFPL)
 
-
 # fischermatte.dev
 
 Personal website based on the following technologies

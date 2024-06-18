@@ -51,6 +51,7 @@ const ProjectComponent: React.FC<Props> = props => {
         )}
         {project.images && (
           <div className="mt-2">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
               role="button"
               className="link underline"

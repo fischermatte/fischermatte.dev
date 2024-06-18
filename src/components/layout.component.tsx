@@ -83,7 +83,8 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           <Link href="/contact" className={router.pathname == '/contact' ? styles.navLinkActive : styles.navLink}>
             Contact
           </Link>
-          <a onClick={switchTheme} className={styles.themeLink}>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a role="presentation" onClick={switchTheme} onKeyDown={switchTheme} className={styles.themeLink}>
             <FontAwesomeIcon className="link" icon={faPalette} />
           </a>
         </nav>

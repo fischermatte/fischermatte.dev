@@ -14,12 +14,16 @@ interface Props {
 const GalleryDialog: React.FC<Props> = props => {
   return (
     <div
+      role="presentation"
       className="fixed inset-0 z-50 overflow-auto bg-gray-800 bg-opacity-90 flex text-accent-dark"
       onClick={e => props.onClose(e)}
+      onKeyDown={e => props.onClose(e)}
     >
       <div
+        role="presentation"
         className="relative p-6 bg-accent-normal w-full max-w-2xl m-auto flex-col flex"
         onClick={e => e.stopPropagation()}
+        onKeyDown={e => e.stopPropagation()}
       >
         {props.images && (
           <div className="flex flex-col gap-2">

@@ -71,6 +71,7 @@ const PhraseDialog: React.FC<Props> = props => {
               {phrase.text} Please click the like button so a counter in a fancy cloud database can be increased.
               <div className="py-4 text-accent-dark select-none ">
                 <div className="text-4xl">
+                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                   <a
                     className="hover:text-accent-contrast"
                     role="button"

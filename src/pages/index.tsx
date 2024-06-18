@@ -61,7 +61,7 @@ const Home: React.FC<Props> = () => {
         <span className="text-accent-normal">Serverless</span> and{' '}
         <span className="text-accent-normal">Cloud native web development</span>. The next paragraph is all about
         tech-lorem-ipsum since nobody cares about what is written on this website. If you really would like to read
-        meaningful content on this page click{' '}
+        meaningful content on this page click {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
           role="button"
           className="link underline"

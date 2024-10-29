@@ -4,7 +4,7 @@
 [![Prettier](https://img.shields.io/badge/prettier-1a2b34.svg?&style=for-the-badge&logo=prettier&logoColor=white)](https://github.com/prettier/prettier)
 [![React](https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://github.com/facebook/react)
 
-[![WTFPL](https://img.shields.io/badge/license-WTFPL-green.svg)](https://de.wikipedia.org/wiki/WTFPL)
+[![WTFPL](https://img.shields.io/badge/license-WTFPL-green.svg)](https://de.wikipedia.org/wiki/WTFPL) ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/fischermatte-dev-fischermattes-projects)
 
 # fischermatte.dev
 

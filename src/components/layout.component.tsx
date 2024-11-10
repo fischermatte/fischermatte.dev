@@ -63,7 +63,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
           <div className="flex bg-accent-normal">
             <Link href="/" className="py-3 px-5 text-accent-dark">
               <div className="flex flex-col lowercase">
-                <div className="text-lg">Fischermatte</div>
+                <div className="text-lg">Klaus Native</div>
                 <div className="text-xs ml-6 self-end">Cloud Software Engineer</div>
               </div>
             </Link>
@@ -92,12 +92,12 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
       <main className="py-6">{props.children}</main>
       <footer className="py-6 text-center">
         <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
-          <a rel="me" href="https://swiss.social/@fischermatte" title="fischermatte on Mastodon">
+          <a rel="me" href="https://swiss.social/@fischermatte" title="klaus native on Mastodon">
             <FontAwesomeIcon className="link" icon={faMastodon} />
           </a>
           <a
             href="https://stackoverflow.com/users/524906/fischermatte?tab=profile"
-            title="fischermatte on Stackoverflow"
+            title="klaus native on Stackoverflow"
           >
             <FontAwesomeIcon className="link" icon={faStackOverflow} />
           </a>

@@ -57,7 +57,7 @@ const Home: React.FC<Props> = () => {
       </div>
       <h1 className="mt-12 mb-6">Moin moin!</h1>
       <div>
-        Hello, I am Fischermatte - a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
+        Hello, I am Klaus Native - a Software Engineer located in Bern, Switzerland. Currently focusing on{' '}
         <span className="text-accent-normal">Serverless</span> and{' '}
         <span className="text-accent-normal">Cloud native web development</span>. The next paragraph is all about
         tech-lorem-ipsum since nobody cares about what is written on this website. If you really would like to read
@@ -87,7 +87,7 @@ const Home: React.FC<Props> = () => {
         Massa <span className="buzzword"> Next.js</span> duis ultricies <span className="buzzword"> Firebase</span>.
       </p>
       <p className="mt-6">Sincerely yours</p>
-      <p className="mt-6">fischermatte</p>
+      <p className="mt-6">Klaus</p>
     </LayoutComponent>
   )
 }

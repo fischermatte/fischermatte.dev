@@ -3,9 +3,7 @@ import {projects} from '../../content/projects'
 import LayoutComponent from '../components/layout.component'
 import ProjectComponent from '../components/project.component'
 
-interface Props {}
-
-const Projects: React.FC<Props> = () => {
+const Projects: React.FC<object> = () => {
   return (
     <LayoutComponent>
       <h1>Projects</h1>

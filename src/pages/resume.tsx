@@ -4,9 +4,7 @@ import LayoutComponent from '../components/layout.component'
 import ResumeItemsComponent from '../components/resume-items.component'
 import {periodText} from '../core/client/period.utils'
 
-interface Props {}
-
-const Resume: React.FunctionComponent<Props> = () => {
+const Resume: React.FunctionComponent<object> = () => {
   return (
     <LayoutComponent>
       <h1>Resume</h1>

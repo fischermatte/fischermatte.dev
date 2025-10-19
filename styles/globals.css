@@ -1,6 +1,7 @@
 @import 'tailwindcss';
+
+@import './fonts.css';
 @import './variables.css';
-@import './typography.css';
 
 @theme {
   --color-primary: var(--color-primary);
@@ -18,6 +19,45 @@
   --border-width: 1px;
 
   --font-mono: Fira Code, 'Courier New', monospace;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+
+  body {
+    background-color: var(--color-accent-dark);
+    color: var(--color-primary);
+    text-rendering: optimizeLegibility !important;
+    font-family:
+      Fira Code,
+      'Courier New',
+      monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: var(--text-lg);
+    color: var(--color-accent-normal);
+    margin-bottom: calc(8 * var(--spacing));
+  }
+
+  h2 {
+    font-size: var(--text-base);
+    color: var(--color-accent-normal);
+    border-bottom-style: double;
+    border-bottom-color: var(--color-accent-normal);
+    display: block;
+    margin-bottom: calc(3 * var(--spacing));
+    padding-bottom: calc(2 * var(--spacing));
+    border-bottom-width: var(--border-width-3);
+  }
 }
 
 .link {

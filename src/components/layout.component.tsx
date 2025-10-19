@@ -10,11 +10,9 @@ import {head} from '../../content/head'
 import packageJson from '../../package.json'
 import styles from './layout.component.module.css'
 
-interface Props {}
-
 const themes = ['theme-dark', 'theme-red', 'theme-monochrome']
 
-const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) => {
+const LayoutComponent: React.FunctionComponent<PropsWithChildren<object>> = (props: PropsWithChildren<object>) => {
   const router = useRouter()
   const page = router.pathname === '/' ? 'index' : router.pathname.replace('/', '')
 
@@ -91,7 +89,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
       </header>
       <main className="py-6">{props.children}</main>
       <footer className="py-6 text-center">
-        <div className="flex p-6 text-3xl justify-center p-5 space-x-4">
+        <div className="flex text-3xl justify-center p-5 space-x-4">
           <a rel="me" href="https://swiss.social/@fischermatte" title="klaus native on Mastodon">
             <FontAwesomeIcon className="link" icon={faMastodon} />
           </a>

@@ -29,7 +29,9 @@ const GalleryDialog: React.FC<Props> = props => {
           <div className="flex flex-col gap-2">
             {props.images
               ?.filter((v, index) => index === 1)
-              .map(image => <Image key={image.url} src={image.url} alt={image.title} width={500} height={500} />)}
+              .map(image => (
+                <Image key={image.url} src={image.url} alt={image.title} width={500} height={500} />
+              ))}
           </div>
         )}
         <div className="text-center mt-6 select-none">

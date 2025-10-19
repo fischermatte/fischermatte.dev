@@ -11,24 +11,19 @@
 
 .navLink,
 .navLinkActive {
+  @apply text-primary cursor-pointer underline;
   text-underline-position: under;
-  color: var(--color-primary);
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .navLinkActive {
-  color: var(--color-accent-normal);
+  @apply text-accent-normal;
 }
 
 .themeLink {
-  color: var(--color-primary);
-  cursor: pointer;
-  position: absolute;
-  right: 0;
+  @apply text-primary cursor-pointer absolute right-0;
 }
 
 .navLink:hover,
 .themeLink:hover {
-  color: var(--color-accent-normal);
+  @apply text-accent-normal;
 }

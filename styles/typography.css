@@ -1,5 +1,3 @@
-@import 'tailwindcss/base';
-
 @font-face {
   font-family: Fira Code;
   font-style: normal;
@@ -17,28 +15,38 @@
 }
 
 @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+
   body {
-    @apply font-mono text-base text-primary bg-accent-dark tracking-tight antialiased subpixel-antialiased;
-    /* optimize for prettier fonts rather than faster rendering times */
+    background-color: var(--color-accent-dark);
+    color: var(--color-primary);
+    font-family: Arial, Helvetica, sans-serif;
     text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
+    font: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+
   h1 {
-    @apply text-lg mb-8 text-accent-normal;
-  }
-  h2 {
-    @apply text-base mb-3 text-accent-normal;
+    font-size: var(--text-lg);
+    color: var(--color-accent-normal);
+    margin-bottom: calc(8 * var(--spacing));
   }
 
   h2 {
-    @apply block text-base border-b-3 border-double border-accent-normal pb-2;
+    font-size: var(--text-base);
+    color: var(--color-accent-normal);
+    border-bottom-style: double;
+    border-bottom-color: var(--color-accent-normal);
+    display: block;
+    margin-bottom: calc(3 * var(--spacing));
+    padding-bottom: calc(2 * var(--spacing));
+    border-bottom-width: var(--border-width-3);
   }
-}
-
-.link {
-  @apply text-primary cursor-pointer;
-}
-
-.link:hover {
-  @apply text-accent-normal;
 }

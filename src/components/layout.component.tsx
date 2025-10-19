@@ -29,7 +29,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
   }
 
   return (
-    <div className="font-mono mx-auto max-w-screen-md min-w-[360px] px-4 py-6">
+    <div className="font-mono mx-auto max-w-(--breakpoint-md) min-w-[360px] px-4 py-6">
       <Head>
         <title>{head[page]?.title}</title>
         <meta charSet="utf-8" />
@@ -68,7 +68,7 @@ const LayoutComponent: React.FunctionComponent<PropsWithChildren<Props>> = (prop
               </div>
             </Link>
           </div>
-          <div className={`flex-grow  ${styles.fill} `}>{}</div>
+          <div className={`grow  ${styles.fill} `}>{}</div>
         </div>
         <nav className="mt-4 text-primary flex flex-wrap space-x-4 relative">
           <Link href="/" className={router.pathname == '/' ? styles.navLinkActive : styles.navLink}>

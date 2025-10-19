@@ -1,9 +1,9 @@
 import {AppProps} from 'next/app'
-import React from 'react'
-import '../../styles/main.css'
+import React, {ReactNode} from 'react'
+import '../../styles/globals.css'
 
 export default class MyApp extends React.Component<AppProps> {
-  render(): JSX.Element {
+  render(): ReactNode {
     const {Component, pageProps} = this.props
     return <Component {...pageProps} />
   }

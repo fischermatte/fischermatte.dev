@@ -1,8 +1,7 @@
 import React from 'react'
 import LayoutComponent from '../components/layout.component'
 
-interface Props {}
-const Contact: React.FC<Props> = () => {
+const Contact: React.FC<object> = () => {
   return (
     <LayoutComponent>
       <h1>{"Let's get in touch!"}</h1>
